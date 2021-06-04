@@ -2,4 +2,48 @@ include ../../sys/pug/vars
 
 header.header
 	.case
-		
+		.header__panel.panel
+			a.panel__logo(href="")
+				img(src="" alt="")
+			.panel__nav
+				ul
+					li
+						a(href="") ГЛАВНАЯ
+					li
+						a(href="") НАШИ РАБОТЫ
+					li
+						a(href="") ОТЗЫВЫ
+					li
+						a(href="") О КОМПАНИИ
+					li
+						a(href="") СТАТЬИ
+					li
+						a(href="") СТРОИТЕЛЬНЫМ КОМПАНИЯМ
+					li
+						a(href="") ВАКАНСИИ
+					li
+						a(href="") КОНТАКТЫ
+		.header__inner
+			.header__ya.ya
+				.ya__head.row
+					.ya__icon
+						img(src="" alt="")
+					.ya__title Рейтинг #[strong Яндекс 4,8]
+				.ya__desc на основе 550 отзывов
+			.header__quote ‘‘Сделали дешевле всех. #[br]Качество на высоте...“
+			.header__address.contact
+				.contact__head
+					.contact__icon
+					.contact__title ОФИС
+				.contact__value ул. Инструментальная, д.3 
+			.header__links.links
+				ul
+					li
+						a(href="") Вызвать замерщика
+					li
+						a(href="") Калькулятор стоимости
+
+			.header__contacts
+				.header__phone.phone #[a(href="tel:+74951197437") +7 (495) 119-74-37]
+				.header__time.time Ежедневно 07:00–22:00
+			a.header__btn.btn.--sm.--bg-white(href="javascript:;" data-fancybox="#modal-callback") Заказать звонок
