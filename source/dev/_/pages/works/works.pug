@@ -1,0 +1,55 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.works
+		.case
+			+breadcrumbs('works__breadcrumbs')
+			.works__title.h1
+			.works__list.row
+				mixin work()
+					a.works__item(href="work.html")
+						.works__img
+							img(src="" alt="")
+						.works__name
+						.works__data.row
+							.works__data-item.d
+								.d__icon
+								.d__text
+									.d__title Площадь по полу:
+									.d__value 1000 м#[sup 2]
+							.works__data-item.d
+								.d__icon
+								.d__text
+									.d__title Площадь по стенам:
+									.d__value 4000 м#[sup 2]
+							.works__icon
+
+				+work()
+				+work()
+				+work()
+				+work()
+				+work()
+				+work()
+				+work()
+				+work()
+
+			.works__pagiantion.pagination.row
+				a.pagination__prev(href="")
+				.pagination__list
+					a.pagination__item(href="") 01
+					a.pagination__item(href="") 02
+					a.pagination__item(href="") 03
+					a.pagination__item(href="") 04
+					a.pagination__item(href="") 05
+					a.pagination__item(href="") 06
+					a.pagination__item(href="") 07
+					a.pagination__item(href="") 08
+					a.pagination__item(href="") ...
+					a.pagination__item(href="") 19
+				a.pagination__next(href="")

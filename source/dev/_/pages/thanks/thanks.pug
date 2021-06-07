@@ -1,0 +1,25 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.thanks
+		.case
+			.thanks__wrap.row
+				.thanks__content
+					+breadcrumbs('thanks__breadcrumbs')
+					.thanks__title.h1 Отлично! #[br]Мы уже получили #[br]Вашу заявку!
+					.thanks__subtitle.h2 Специалист свяжется в ближайшее время
+					.thanks__call.call
+				.thanks__img-wrap
+					.thanks__img
+						img(src="" alt="")
+					.thanks__person.person
+						.person__icon
+							img(src="" alt="")
+						.person__name Ольга
+						.person__position Менеджер

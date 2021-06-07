@@ -62,4 +62,57 @@ footer.footer
 	.footer__bot
 		.case
 			.footer__bot-wrap.row
-				.footer__copy (С) ПетроСтрой 2021. Все права защищены. Данный сайт носит информационно-справочный характер и не при каких условиях не является публичной офертой. #[br]Оставляя заявку на данном сайте на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с политикой 
+				.footer__copy (С) ПетроСтрой 2021. Все права защищены. Данный сайт носит информационно-справочный характер и не при каких условиях не является публичной офертой. #[br]Оставляя заявку на данном сайте на кнопку, вы даете согласие на обработку своих персональных данных и соглашаетесь с политикой
+
+
+.modals
+	mixin modal(id, title, text, btn)
+		.modal(id='modal-'+id)
+			.modal__close
+			.modal__wrap
+				.modal__title= title
+				.modal__text= text
+				.modal__form
+					if attributes.select
+						.modal__select.select.--md.--bg-gray
+							.select__label
+							.select__wrap
+								.select__block
+									.select__icon
+										img(src="" alt="")
+									.select__title
+								.select__list
+									.select__item.check
+										input.select__input(type="radio" name="messenger" value="whatsapp")
+										.select__icon
+											img(src="" alt="")
+										.select__title
+					if attributes.square
+						.modal__input.input.--md.--bg-gray
+							.input__label Площадь, м#[sup 2]
+							.input__wrap
+								input.input__area(type="text" name="square" placeholder="150 м2")
+							.input__icon
+					if attributes.radios
+						.modal__radios.radios
+							.radios__item.check
+								input.radios__input(type="radio" name="what" value="floor" checked="checked")
+								.radios__label По полу
+							.radios__item.check
+								input.radios__input(type="radio" name="what" value="wall")
+								.radios__label По стенам
+
+					.modal__input.input.--md.--bg-gray
+						.input__wrap
+							input.input__area(type="number" name="phone" placeholder="+7 ( ___ ) ___ - __ - __")
+						.input__icon
+					button.modal__btn.btn.--md.--bg-blue= btn
+					.modal__policy Нажимая на кнопку, вы даете согласие #[br]на обработку своих персональных данных #[br]и соглашаетесь с политикой конфиденциальности
+
+	+modal('call-measurer', 'Вызовите замерщика на объект', 'Заполните форму ниже, в ближайшее время <br>вышлем специалист свяжется с Вами  <br>и подберёт удобное время для замера', 'ВЫЗВАТЬ ЗАМЕРЩИКА')
+	+modal('callback', 'Закажите бесплатный звонок', 'Заполните форму ниже, в ближайшее время <br>с Вами свяжется специалист', 'ЗАКАЗАТЬ ЗВОНОК')
+	+modal('contact-directly', 'Свяжитесь с руководителем <br>напрямую', 'Заполните форму ниже и в ближайшее время <br>с Вами свяжется руководитель', 'СВЯЗАТЬСЯ С РУКОВОДИТЕЛЕМ')
+	+modal('contract-payment', 'Подробнее о договоре и оплате', 'Заполните форму ниже, в ближайшее время <br>с Вами свяжется специалист, вышлет договор <br>и расскажет о способах оплаты', 'Узнать подробнее')
+	+modal('partnership', 'Вы строительная компания <br>или бригада', 'Заполните форму ниже и в ближайшее время <br>с Вами свяжется руководитель', 'ОБСУДИТЬ СОТРУДНИЧЕСТВО')
+	+modal('callback-messengers', 'Закажите бесплатный звонок', 'Заполните форму ниже, в ближайшее время <br>с Вами свяжется специалист', 'ЗАКАЗАТЬ ЗВОНОК')(select=true)
+	+modal('calc', 'Рассчитайте стоимость', 'Заполните форму ниже, в ближайшее <br>время мы сообщим стоимость', 'РАССЧИТАТЬ СТОИМОСТЬ')(square=true, radios=true)

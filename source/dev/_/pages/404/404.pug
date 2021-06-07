@@ -1,0 +1,20 @@
+extends ../../templates/default
+block vars
+	-
+		title = ""
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	.page404
+		.case
+			.page404__head
+				.page404__count 404
+				.page404__img
+					img(src="" alt="")
+			.page404__title.h2 ошибка
+			.page404__subtitle.h2 Извините, такой страницы еще не существует
+			.page404__controls
+				a.page404__btn.btn.--sm.--bg-white(href="index.html") Перейдите на главную страницу
+				.page404__desc или любой другой раздел

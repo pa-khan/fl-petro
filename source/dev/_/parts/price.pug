@@ -1,0 +1,34 @@
+.price
+	.case
+		.price__title.h1 СТОИМОСТЬ ОТ #[strong 300 р/м#[sup 2]]
+		.price__subtitle.h3 Это минимальная цена без материалов при объеме от 200 м#[sup 2]
+		.price__list.row
+			mixin pItem(img, name, price, text)
+				.price__item.p-item
+					.p-item__head
+						.p-item__img
+							img(src=img alt="")
+						.p-item__title ТАРИФ
+						.p-item__name= name
+					.p-item__body
+						.p-item__text.t2= text
+						.p-item__price.p
+							.p__title СТОИМОСТЬ
+							.p__value от #[var= price] РУБ/м#[sup 2]
+							.p__tog материалы
+					.p-item__foot.feedback
+						.feedback__title Рассчитайте точную стоимость #[br]по телефону за 2 минуты
+						.feedback__text Менеджер задаст уточняющие вопросы #[br]и сделает скидку в зависимости от объема
+						.feedback__input.input.--icon.--phone.--required
+							.input__wrap
+								input.input__area(type="number" name="phone" placeholder="+7 ( ___ ) ___ - __ - __")
+							.input__icon
+						button.feedback__btn.btn.--md.--bg-blue РАССЧИТАТЬ СТОИМОСТЬ
+						.feedback__messengers.messengers
+							.messengers__icon
+								img(src="" alt="")
+							.messengers__link #[a(href="") ИСПОЛЬЗОВАТЬ МЕССЕНДЖЕРЫ]
+			+pItem('', 'МИНИМАЛЬНЫЙ', '300', '<h3>Что включено:</h3><ul><li>Грунтование</li><li>Выставление маяков</li><li>Оштукатуривание стен</li><li>Уборка мусора</li></ul>')
+			+pItem('', 'СТАНДАРТ', '350', '<h3>Что включено:</h3><ul><li>Грунтование</li><li>Выставление маяков</li><li>Оштукатуривание стен</li><li>Затирка и глянцевание</li><li>Использование оцинкованных уголков</li><li>Уборка мусора</li></ul>')
+			+pItem('', 'МАКСИМАЛЬНЫЙ', '390', '<h3>Что включено:</h3><ul><li>Грунтование</li><li>Выставление маяков</li><li>Оштукатуривание стен</li><li>Затирка и глянцевание под обои</li><li>Использование ПВХ уголков </li><li>и профиля примыкания</li><li>Уборка мусора</li><li>Ровные углы 90<sup>о</sup></li></ul>')
+		.price__desc.h3 Включена доставка оборудования до 40 км
