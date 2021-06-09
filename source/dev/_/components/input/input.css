@@ -4,10 +4,34 @@
 .input__area {
   width: 100%;
   font-family: "Manrope", sans-serif;
-  color: #fff;
+  color: #484e51;
   background-color: transparent;
 }
 .input__area::placeholder {
-  opacity: 0.5;
-  color: #fff;
+  opacity: 0.8;
+  color: #484e51;
+}
+.input__icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 12px;
+  font-size: 0;
+  transform: translateY(-50%);
+}
+.input.--md .input__area {
+  height: 68px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+.input.--icon .input__area {
+  padding-right: 55px;
+}
+.input.--bg-gray .input__area {
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.input.--bg-gray .input__icon svg path {
+  opacity: 0.2;
 }

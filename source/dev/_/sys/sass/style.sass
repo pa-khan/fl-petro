@@ -4,10 +4,10 @@
 @import grid
 
 @import ../../components/btn/btn
-// @import ../../components/check/check
+@import ../../components/check/check
 // @import ../../components/checkbox/checkbox
 // @import ../../components/radio/radio
-// @import ../../components/input/input
+@import ../../components/input/input
 // @import ../../components/textarea/textarea
 // @import ../../components/select/select
 // @import ../../components/tabs/tabs
@@ -632,6 +632,9 @@ sup
 		opacity: 0.6
 		text-align: center
 		margin-bottom: 100px
+	&__list
+		margin-left: -15px
+		margin-right: -15px
 	&__item
 		width: calc(100% / 3 - 30px)
 		margin-left: 15px
@@ -639,6 +642,10 @@ sup
 		border-radius: 8px
 		background-color: #ffffff
 		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.05)
+	&__desc
+		margin-top: 50px
+		text-align: center
+		opacity: 0.6
 
 
 .t2
@@ -726,4 +733,121 @@ sup
 		padding-left: 45px
 		padding-right: 20px
 	&__foot
+		padding: 42px 45px 55px
 		border-top: 1px solid #eeeeee
+
+
+.feedback
+	&__title
+		font-weight: 700
+		line-height: 23px
+		margin-bottom: 4px
+	&__text
+		font-size: 13px
+		line-height: 22px
+		opacity: 0.8
+	&__input
+		margin-top: 16px
+		margin-bottom: 20px
+	&__messengers
+		margin-top: 29px
+
+.messengers
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	&__icons
+		display: flex
+	&__icon
+		width: 14px
+		height: 14px
+		font-size: 0
+		position: relative
+		margin-right: -2px
+		&:nth-of-type(1)
+			z-index: 1
+			&:before
+				content: ''
+				position: absolute
+				top: -2px
+				left: -2px
+				right: -2px
+				bottom: -2px
+				border: 2px solid #fff
+				border-radius: 50%
+
+	&__link
+		font-size: 11px
+		letter-spacing: 0.44px
+		margin-left: 9px
+		a
+			color: $blue
+			border-bottom: 1px dashed $blue
+			&:hover
+				border-color: transparent
+		
+
+.allinc
+	z-index: 1
+	position: relative
+	padding-top: 105px
+	.case
+		padding-bottom: 100px
+	&__subtitle
+		opacity: 0.6
+		// letter-spacing: 0.4px
+	&__title
+		margin-bottom: 55px
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: -30px
+	&__item
+		position: relative
+		display: flex
+		align-items: center
+		width: calc(100% / 4 - 30px)
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 30px
+		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.05)
+		border-radius: 8px
+		background-color: #ffffff
+		overflow: hidden
+		padding-top: 30px
+		padding-bottom: 30px
+	&__name
+		line-height: 23px
+		padding-left: 40px
+		padding-right: 50px
+	&__value
+		opacity: 0.15
+		text-align: right
+		position: absolute
+		top: 50%
+		right: -5px
+		font-size: 47px
+		font-weight: 600
+		font-family: $montserrat
+		transform: translateY(-50%)
+	&__img
+		z-index: -1
+		position: absolute
+		bottom: 0
+		right: 50px
+
+
+.calc
+	&__inner
+		padding: 75px 80px 80px 80px
+		width: calc(100% - 290px)
+	&__title
+		font-size: 32px
+		line-height: 50px
+		font-weight: 700
+		font-family: $montserrat
+		text-transform: uppercase
+	&__gifts
+		width: 290px
+		border-left: 1px solid #eee
+	

@@ -1,53 +1,223 @@
 .calc
 	.case
-		.calc__block.b
-			.calc__intro
+		.calc__block.b.row
+			.calc__inner
 				.calc__subtitle.h2 ответьте на 5 вопросов
-				.calc__title.h1 #[strong и рассчитайте стоимость оштукатуривания за 2 минуты] 
+				.calc__title #[strong и рассчитайте стоимость оштукатуривания за 2 минуты] 
 				.calc__desc В 3-х вариантах: «Минимальный», «Под ключ», «Премиум»
 				.calc__wrap
 					.calc__status.status
 						.status__item
 					.calc__list
 						.calc__item
+							.calc__item-title.h2 ЧТО НЕОБХОДИМО ОШТУКАТУРИТЬ
 							.calc__radios.row
-								.calc__radio.rad-img.check
-									input.rad-img__input(type="radio" name="" value="" checked="checked")
-									.rad-img__wrap
-										.rad-img__inner
-											.rad-img__icon
-											.rad-img__title СТЕНЫ
-										.rad-img__img
-											img(src="" alt="")
-								.calc__radio.rad-img.check
-									input.rad-img__input(type="radio" name="" value="")
-									.rad-img__wrap
-										.rad-img__inner
-											.rad-img__icon
-											.rad-img__title Откосы
-										.rad-img__img
-											img(src="" alt="")
-								.calc__radio.rad-img.check
-									input.rad-img__input(type="radio" name="" value="")
-									.rad-img__wrap
-										.rad-img__inner
-											.rad-img__icon
-											.rad-img__title фасады
-										.rad-img__img
-											img(src="" alt="")
-								.calc__radio.rad-img.check
-									input.rad-img__input(type="radio" name="" value="")
-									.rad-img__wrap
-										.rad-img__inner
-											.rad-img__icon
-											.rad-img__title потолки
-										.rad-img__img
-											img(src="" alt="")
-						.calc__controls
-							.calc__control.btn.--md.--bg-blue.--prev
-								span ПРЕДЫДУЩИЙ ШАГ
-							.calc__control.btn.--md.--bg-blue.--next
-								span СЛЕДУЮЩИЙ ШАГ
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="type" value="Стены" checked="checked")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Стены
+										.rad__img
+											img(src="_/uploads/calc-type-1.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="type" value="Откосы")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Откосы
+										.rad__img
+											img(src="_/uploads/calc-type-2.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="type" value="Фасады")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Фасады
+										.rad__img
+											img(src="_/uploads/calc-type-3.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="type" value="Потолки")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Потолки
+										.rad__img
+											img(src="_/uploads/calc-type-4.png" alt="")
+						.calc__item
+							.calc__item-title.h2 какая площадь по полу?
+							.calc__radios.row
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="до 50" checked="checked")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title до 50 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="От 50 до 100")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title От 50 до 100 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="От 100 до 150")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title От 100 до 150 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="От 150 до 300")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title От 150 до 300 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="От 300 до 500")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title От 300 до 500 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="От 500 до 1000")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title От 500 до 1000 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="Более 1000")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Более 1000 м#[sup 2]
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="square" value="Не знаю точно")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Не знаю точно
+						.calc__item
+							.calc__item-title.h2 проведена ли электрика?
+							.calc__radios.row
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="energy" value="" checked="checked")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Да
+										.rad__img
+											img(src="_/uploads/calc-type-1.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="energy" value="")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Нет
+										.rad__img
+											img(src="_/uploads/calc-type-2.png" alt="")
+						.calc__item
+							.calc__item-title.h2 ГДЕ НАХОДИТСЯ ОБЪЕКТ?
+							.calc__radios.row
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="location" value="Москва" checked="checked")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Москва
+										.rad__img
+											img(src="_/uploads/calc-type-1.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="location" value="Новая москва")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Новая москва
+										.rad__img
+											img(src="_/uploads/calc-type-2.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="location" value="Московская область до 30 км от МКАД")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Московская область #[br]до 30 км от МКАД
+										.rad__img
+											img(src="_/uploads/calc-type-3.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="location" value="Московская область свыше 30 км от МКАД")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Московская область #[br]свыше 30 км от МКАД
+										.rad__img
+											img(src="_/uploads/calc-type-4.png" alt="")
+						.calc__item
+							.calc__item-title.h2 ИЗ КАКОГО МАТЕРИАЛА СДЕЛАНЫ СТЕНЫ?
+							.calc__radios.row
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="material" value="Кирпич" checked="checked")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Кирпич
+										.rad__img
+											img(src="_/uploads/calc-material-1.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="material" value="Бетон")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Бетон
+										.rad__img
+											img(src="_/uploads/calc-material-2.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="material" value="Пенобетон")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Пенобетон
+										.rad__img
+											img(src="_/uploads/calc-material-3.png" alt="")
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="material" value="Окрашенные поверхности")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Окрашенные #[br]поверхности
+										.rad__img
+											img(src="_/uploads/calc-material-4.png" alt="")
+						.calc__item
+							.calc__item-title.h2 КАК ХОТИТЕ ОШТУКАТУРИТЬ?
+							.calc__radios.row
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="plaster" value="Под покраску" checked="checked")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Под покраску
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="plaster" value="Под обои")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Под обои
+								.calc__radio.rad.check
+									input.rad__input(type="radio" name="plaster" value="Помогите определиться")
+									.rad__wrap
+										.rad__inner
+											.rad__icon
+											.rad__title Помогите определиться
+						.calc__item.c-thanks
+							.c-thanks__title
+							.c-thanks__form.row
+								.c-thanks__select
+								.c-thanks__input
+								button.c-thanks__btn.btn.--md.--bg-blue
+								.c-thanks__btn-desc
+
+					.calc__controls
+						.calc__control.btn.--md.--bg-blue.--prev
+							span ПРЕДЫДУЩИЙ ШАГ
+						.calc__control.btn.--md.--bg-blue.--next
+							span СЛЕДУЮЩИЙ ШАГ
 
 			.calc__gifts.b-gifts
 				.b-gifts__head
@@ -57,16 +227,16 @@
 					.b-gifts__item
 						.b-gifts__name Вывоз мусора
 						.b-gifts__img
-							img(src="" alt="")
+							img(src="_/uploads/b-gifts-1.png" alt="")
 					.b-gifts__item
 						.b-gifts__name 5 мешков штукатурки #[br]для заделывания штроб
 						.b-gifts__img
-							img(src="" alt="")
+							img(src="_/uploads/b-gifts-2.png" alt="")
 					.b-gifts__item
 						.b-gifts__name Штукатурка откосов #[br]двух окон
 						.b-gifts__img
-							img(src="" alt="")
+							img(src="_/uploads/b-gifts-3.png" alt="")
 					.b-gifts__item
 						.b-gifts__name Утепление #[br]одного окна
 						.b-gifts__img
-							img(src="" alt="")
+							img(src="_/uploads/b-gifts-4.png" alt="")
