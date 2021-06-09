@@ -10,14 +10,14 @@ html, body {
 }
 
 body {
-  color: #fff;
-  font-size: 16px;
-  font-family: "IBM Plex Sans", sans-serif;
+  color: #484e51;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   font-weight: 400;
-  background-color: #1b1d1f;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,15 +38,14 @@ li {
 }
 
 a {
-  color: #ffb800;
+  color: #484e51;
   text-decoration: none;
   outline: none;
   transition: 0.3s;
-  font-weight: 600;
   border-bottom: 1px solid transparent;
 }
 a:hover {
-  color: #ffd600;
+  color: #484e51;
 }
 
 input, textarea, button {
