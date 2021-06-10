@@ -41,3 +41,20 @@
   background-color: #2a88d1;
   box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35);
 }
+.btn.--bg-blue path {
+  fill: #ffffff;
+}
+.btn.--bg-blue:hover {
+  background-color: #009cff;
+  box-shadow: 0 1px 50px rgba(0, 156, 255, 0.4), inset 5px 5px 20px rgba(255, 255, 255, 0.55);
+}
+.btn.--disabled {
+  cursor: default !important;
+  color: rgba(72, 78, 81, 0.6) !important;
+  background-color: #f4f4f4 !important;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35) !important;
+}
+.btn.--disabled path {
+  fill: #000;
+  opacity: 0.35;
+}

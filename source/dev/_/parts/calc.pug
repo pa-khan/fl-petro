@@ -7,37 +7,36 @@
 				.calc__desc В 3-х вариантах: «Минимальный», «Под ключ», «Премиум»
 				.calc__wrap
 					.calc__status.status
-						.status__item
 					.calc__list
 						.calc__item
-							.calc__item-title.h2 ЧТО НЕОБХОДИМО ОШТУКАТУРИТЬ
+							.calc__item-title.h2 ЧТО НЕОБХОДИМО ОШТУКАТУРИТЬ?
 							.calc__radios.row
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="type" value="Стены" checked="checked")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-type" value="Стены" checked="checked")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Стены
 										.rad__img
 											img(src="_/uploads/calc-type-1.png" alt="")
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="type" value="Откосы")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-type" value="Откосы")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Откосы
 										.rad__img
 											img(src="_/uploads/calc-type-2.png" alt="")
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="type" value="Фасады")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-type" value="Фасады")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Фасады
 										.rad__img
 											img(src="_/uploads/calc-type-3.png" alt="")
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="type" value="Потолки")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-type" value="Потолки")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
@@ -48,49 +47,49 @@
 							.calc__item-title.h2 какая площадь по полу?
 							.calc__radios.row
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="до 50" checked="checked")
+									input.rad__input(type="radio" name="calc-square" value="до 50" checked="checked")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title до 50 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="От 50 до 100")
+									input.rad__input(type="radio" name="calc-square" value="От 50 до 100")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title От 50 до 100 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="От 100 до 150")
+									input.rad__input(type="radio" name="calc-square" value="От 100 до 150")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title От 100 до 150 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="От 150 до 300")
+									input.rad__input(type="radio" name="calc-square" value="От 150 до 300")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title От 150 до 300 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="От 300 до 500")
+									input.rad__input(type="radio" name="calc-square" value="От 300 до 500")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title От 300 до 500 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="От 500 до 1000")
+									input.rad__input(type="radio" name="calc-square" value="От 500 до 1000")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title От 500 до 1000 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="Более 1000")
+									input.rad__input(type="radio" name="calc-square" value="Более 1000")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Более 1000 м#[sup 2]
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="square" value="Не знаю точно")
+									input.rad__input(type="radio" name="calc-square" value="Не знаю точно")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
@@ -99,85 +98,76 @@
 							.calc__item-title.h2 проведена ли электрика?
 							.calc__radios.row
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="energy" value="" checked="checked")
+									input.rad__input(type="radio" name="calc-energy" value="" checked="checked")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Да
-										.rad__img
-											img(src="_/uploads/calc-type-1.png" alt="")
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="energy" value="")
+									input.rad__input(type="radio" name="calc-energy" value="")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Нет
-										.rad__img
-											img(src="_/uploads/calc-type-2.png" alt="")
 						.calc__item
 							.calc__item-title.h2 ГДЕ НАХОДИТСЯ ОБЪЕКТ?
 							.calc__radios.row
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="location" value="Москва" checked="checked")
+									input.rad__input(type="radio" name="calc-location" value="Москва" checked="checked")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Москва
-										.rad__img
-											img(src="_/uploads/calc-type-1.png" alt="")
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="location" value="Новая москва")
+									input.rad__input(type="radio" name="calc-location" value="Новая москва")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Новая москва
-										.rad__img
-											img(src="_/uploads/calc-type-2.png" alt="")
+
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="location" value="Московская область до 30 км от МКАД")
+									input.rad__input(type="radio" name="calc-location" value="Московская область до 30 км от МКАД")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Московская область #[br]до 30 км от МКАД
-										.rad__img
-											img(src="_/uploads/calc-type-3.png" alt="")
+
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="location" value="Московская область свыше 30 км от МКАД")
+									input.rad__input(type="radio" name="calc-location" value="Московская область свыше 30 км от МКАД")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Московская область #[br]свыше 30 км от МКАД
-										.rad__img
-											img(src="_/uploads/calc-type-4.png" alt="")
+
 						.calc__item
 							.calc__item-title.h2 ИЗ КАКОГО МАТЕРИАЛА СДЕЛАНЫ СТЕНЫ?
 							.calc__radios.row
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="material" value="Кирпич" checked="checked")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-material" value="Кирпич" checked="checked")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Кирпич
 										.rad__img
 											img(src="_/uploads/calc-material-1.png" alt="")
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="material" value="Бетон")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-material" value="Бетон")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Бетон
 										.rad__img
 											img(src="_/uploads/calc-material-2.png" alt="")
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="material" value="Пенобетон")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-material" value="Пенобетон")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Пенобетон
 										.rad__img
 											img(src="_/uploads/calc-material-3.png" alt="")
-								.calc__radio.rad.check
-									input.rad__input(type="radio" name="material" value="Окрашенные поверхности")
+								.calc__radio.rad.check.--img
+									input.rad__input(type="radio" name="calc-material" value="Окрашенные поверхности")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
@@ -188,36 +178,60 @@
 							.calc__item-title.h2 КАК ХОТИТЕ ОШТУКАТУРИТЬ?
 							.calc__radios.row
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="plaster" value="Под покраску" checked="checked")
+									input.rad__input(type="radio" name="calc-plaster" value="Под покраску" checked="checked")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Под покраску
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="plaster" value="Под обои")
+									input.rad__input(type="radio" name="calc-plaster" value="Под обои")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Под обои
 								.calc__radio.rad.check
-									input.rad__input(type="radio" name="plaster" value="Помогите определиться")
+									input.rad__input(type="radio" name="calc-plaster" value="Помогите определиться")
 									.rad__wrap
 										.rad__inner
 											.rad__icon
 											.rad__title Помогите определиться
-						.calc__item.c-thanks
+						.calc__item.c-thanks.--finally
 							.c-thanks__title
 							.c-thanks__form.row
-								.c-thanks__select
+								.c-thanks__select.select.--md.--bg-gray
+									.select__label Как вам удобнее получить результат
+									.select__wrap
+										.select__block
+										.select__list
+											.select__item.check
+												input.select__input(type="radio" name="calc-messenger" value="Телефон" checked="checked")
+												.select__item-wrap
+													.select__icon
+														img(src="_/uploads/messenger-telephone.svg" alt="")
+													.select__title Телефон
+											.select__item.check
+												input.select__input(type="radio" name="calc-messenger" value="Telegram")
+												.select__item-wrap
+													.select__icon
+														img(src="_/uploads/telegram.svg" alt="")
+													.select__title Telegram
+											.select__item.check
+												input.select__input(type="radio" name="calc-messenger" value="WhatsApp")
+												.select__item-wrap
+													.select__icon
+														img(src="_/uploads/whatsapp.svg" alt="")
+													.select__title WhatsApp
 								.c-thanks__input
 								button.c-thanks__btn.btn.--md.--bg-blue
 								.c-thanks__btn-desc
 
-					.calc__controls
-						.calc__control.btn.--md.--bg-blue.--prev
+					.calc__controls.row
+						.calc__control.btn.--md.--bg-blue.--prev.--disabled
+							<svg class="icon-arrow-left" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.84171 50.3536 3.64645L47.1716 0.464466C46.9763 0.269204 46.6597 0.269204 46.4645 0.464466C46.2692 0.659728 46.2692 0.976311 46.4645 1.17157L49.2929 4L46.4645 6.82843C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.7308 46.9763 7.7308 47.1716 7.53553L50.3536 4.35355ZM0 4.5H50V3.5H0V4.5Z" fill="black"/></svg>
 							span ПРЕДЫДУЩИЙ ШАГ
 						.calc__control.btn.--md.--bg-blue.--next
 							span СЛЕДУЮЩИЙ ШАГ
+							<svg class="icon-arrow-right" width="51" height="8" viewBox="0 0 51 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50.3536 4.35355C50.5488 4.15829 50.5488 3.84171 50.3536 3.64645L47.1716 0.464466C46.9763 0.269204 46.6597 0.269204 46.4645 0.464466C46.2692 0.659728 46.2692 0.976311 46.4645 1.17157L49.2929 4L46.4645 6.82843C46.2692 7.02369 46.2692 7.34027 46.4645 7.53553C46.6597 7.7308 46.9763 7.7308 47.1716 7.53553L50.3536 4.35355ZM0 4.5H50V3.5H0V4.5Z" fill="black"/></svg>
 
 			.calc__gifts.b-gifts
 				.b-gifts__head

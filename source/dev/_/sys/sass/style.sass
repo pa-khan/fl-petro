@@ -9,11 +9,73 @@
 // @import ../../components/radio/radio
 @import ../../components/input/input
 // @import ../../components/textarea/textarea
-// @import ../../components/select/select
+@import ../../components/select/select
 // @import ../../components/tabs/tabs
 // @import ../../components/popup/popup
 // @import ../../components/slider/slider
 // @import ../../components/tog/tog
+
+.icon-arrow-left
+	transform: rotate(180deg)
+
+.rad
+	border-radius: 8px
+	transition: .3s
+	border: 1px solid #eeeeee
+	&__input
+		display: none
+	&__wrap
+		display: flex
+		align-items: flex-end
+		padding: 15px 15px 15px 30px
+	&__inner
+		display: flex
+		width: 100%
+	&__icon
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 14px
+		height: 14px
+		border-radius: 50%
+		background-color: #eeeeee
+		transition: .3s
+		position: relative
+		top: 3px
+		&:before
+			content: ''
+			width: 6px
+			height: 6px
+			border-radius: 50%
+			transition: .3s
+	&__title
+		width: calc(100% - 14px)
+		padding-left: 15px
+		font-size: 14px
+		font-weight: 700
+		letter-spacing: 0.28px
+		text-transform: uppercase
+	&__img
+		min-width: 90px
+		min-height: 90px
+		border-radius: 8px
+		margin-left: 10px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&.--img
+		.rad
+			&__inner
+				padding-bottom: 15px
+	&.--checked
+		border-color: #f4f4f4
+		background-color: #f4f4f4
+		.rad
+			&__icon
+				background-color: #49af35
+				&:before
+					background-color: #fff
 
 sup
 	font-size: .6em
@@ -837,6 +899,36 @@ sup
 		right: 50px
 
 
+
+.status
+	display: flex
+	flex-wrap: wrap
+	margin-left: -10px
+	margin-right: -10px
+	&__item
+		width: 70px
+		height: 10px
+		border-radius: 5px
+		background-color: #f4f4f4
+		margin-left: 10px
+		margin-right: 10px
+		position: relative
+		&:before
+			opacity: 0
+			content: ''
+			width: 70px
+			height: 10px
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			transition: .3s
+			border-radius: 50px
+			background: url('../imgs/status-item.png') no-repeat center
+		&.--active
+			&:before
+				opacity: 1
 .calc
 	&__inner
 		padding: 75px 80px 80px 80px
@@ -847,6 +939,51 @@ sup
 		font-weight: 700
 		font-family: $montserrat
 		text-transform: uppercase
+	&__subtitle
+		&.--hidden
+			display: none
+	&__desc
+		margin-bottom: 35px
+		&.--hidden
+			display: none
+	&__status
+		margin-bottom: 45px
+		&.--hidden
+			display: none
+	&__item
+		height: 0
+		overflow: hidden
+		&-title
+			margin-bottom: 30px
+		&.--current
+			height: auto
+			overflow: visible
+	&__radios
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: -30px
+	&__radio
+		width: calc(100% / 2 - 30px)
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 30px
+	&__controls
+		margin-top: 30px
+		margin-left: -15px
+		margin-right: -15px
+		&.--hidden
+			display: none
+	&__control
+		width: calc(100% / 2 - 30px)
+		margin-left: 15px
+		margin-right: 15px
+		&.btn
+			padding-left: 0px
+			padding-right: 0px
+		svg + span
+			margin-left: 70px
+		span + svg
+			margin-left: 70px
 	&__gifts
 		width: 290px
 		border-left: 1px solid #eee
