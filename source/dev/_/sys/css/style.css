@@ -244,8 +244,20 @@ path, circle, rect, line {
 .select__block {
   z-index: 2;
   position: relative;
+}
+.select__block-wrap {
   display: flex;
   align-items: center;
+  height: 100%;
+}
+.select__block-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  width: 10px;
+  height: 10px;
+  transition: 0.3s;
+  opacity: 0.6;
 }
 .select__icon {
   min-width: 12px;
@@ -289,6 +301,9 @@ path, circle, rect, line {
   padding-left: 32px;
   padding-right: 45px;
 }
+.select.--md .select__block-icon {
+  right: 30px;
+}
 .select.--md .select__title {
   font-size: 14px;
 }
@@ -308,6 +323,9 @@ path, circle, rect, line {
 }
 .select.--bg-gray .select__item:hover, .select.--bg-gray .select__item.--checked {
   background-color: #e7e7e7;
+}
+.select.--open .select__block-icon {
+  transform: translateY(-50%) rotate(-90deg);
 }
 .select.--open .select__list {
   opacity: 1;
@@ -1444,4 +1462,45 @@ sup {
 .calc__gifts {
   width: 290px;
   border-left: 1px solid #eee;
+}
+
+.c-thanks {
+  padding-top: 20px;
+}
+.c-thanks__title {
+  margin-bottom: 22px;
+}
+.c-thanks__form {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: -30px;
+  align-items: flex-end;
+}
+.c-thanks__item {
+  width: calc(100% / 2 - 30px);
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+.c-thanks__btn-desc {
+  opacity: 0.5;
+  font-size: 12px;
+  line-height: 19px;
+  padding-bottom: 5px;
+}
+
+.b-gifts__head {
+  padding: 74px 50px 42px 40px;
+  border-bottom: 1px solid #eee;
+}
+.b-gifts__item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.b-gifts__item:last-of-type {
+  border-bottom: none;
+}
+.b-gifts__img {
+  margin-left: auto;
 }

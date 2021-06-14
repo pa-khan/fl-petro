@@ -1,5 +1,5 @@
 function Select(element) {
-	let $block = element.querySelector('.select__block'),
+	let $block = element.querySelector('.select__block-wrap'),
 			$items  = element.querySelectorAll('.select__item'),
 			itemSelectedInner = element?.querySelector('.select__item.--checked .select__item-wrap').innerHTML;
 

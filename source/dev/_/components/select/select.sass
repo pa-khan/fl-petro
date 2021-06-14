@@ -10,8 +10,18 @@
 	&__block
 		z-index: 2
 		position: relative
-		display: flex
-		align-items: center
+		&-wrap
+			display: flex
+			align-items: center
+			height: 100%
+		&-icon
+			position: absolute
+			top: 50%
+			transform: translateY(-50%) rotate(90deg)
+			width: 10px
+			height: 10px
+			transition: .3s
+			opacity: 0.6
 	&__icon
 		min-width: 12px
 		margin-right: 12px
@@ -51,6 +61,8 @@
 				height: 68px
 				padding-left: 32px
 				padding-right: 45px
+				&-icon
+					right: 30px
 			&__title
 				font-size: 14px
 			&__item
@@ -69,9 +81,13 @@
 					background-color: darken(#f4f4f4, 5%)
 	&.--open
 		.select
+			&__block
+				&-icon
+					transform: translateY(-50%) rotate(-90deg)
 			&__list
 				opacity: 1
 				visibility: visible
 				transform: translateY(0px)
+
 				
 		
