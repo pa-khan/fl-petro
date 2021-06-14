@@ -6,61 +6,68 @@
 			mixin object
 				.objects__item.object
 					.object__content
-						.object__name Механизированная штукатурка стен, откосов в загородном доме 800 м2
-						.object__data.obj-data
-							.obj-data__item
-								.obj-data__icon
-								.obj-data__text
-									.obj-data__title Площадь по полу: 
-									.obj-data__value 1000 м#[sup 2]
-							.obj-data__item
-								.obj-data__icon
-								.obj-data__text
-									.obj-data__title Площадь по стенам: 
-									.obj-data__value 4000 м#[sup 2]
-							.obj-data__item
-								.obj-data__icon
-								.obj-data__text
-									.obj-data__title СРОК: 
-									.obj-data__value 4 дня
-							.obj-data__item
-								.obj-data__icon 
-								.obj-data__text
-									.obj-data__title Описание:
-									.obj-data__value Выполнили работу в жилой квартире площадью 80 кв. м #[br]за 1 день. Заказчик остался доволен проделанной работой. #[br]Дополнительно залили полусухую стяжку.
+						.object__name Механизированная штукатурка стен, откосов в загородном доме 800 м#[sup 2]
+						.object__data.data
+							.data__list.row
+								.data__item
+									.data__icon
+											img(src="_/uploads/tape-green.svg" alt="")
+									.data__text
+										.data__title Площадь по полу: 
+										.data__value 1000 м#[sup 2]
+								.data__item
+									.data__icon
+											img(src="_/uploads/tape-green.svg" alt="")
+									.data__text
+										.data__title Площадь по стенам: 
+										.data__value 4000 м#[sup 2]
+								.data__item
+									.data__icon
+											img(src="_/uploads/clock-green.svg" alt="")
+									.data__text
+										.data__title СРОК: 
+										.data__value 4 дня
+								.data__item.--full
+									.data__icon
+										img(src="_/uploads/info-green.svg" alt="") 
+									.data__text
+										.data__title Описание:
+										.data__value Выполнили работу в жилой квартире площадью 80 кв. м #[br]за 1 день. Заказчик остался доволен проделанной работой. #[br]Дополнительно залили полусухую стяжку.
 						.object__btns.row
 							a.object__btn.btn.--md.--bg-blue У МЕНЯ ПОХОЖАЯ ЗАДАЧА
-							.object__more
+							a.object__more(href="object.html")
+								img(src="_/uploads/info-gray.svg" alt="")
 								span Узнать подробнее
 					.object__imgs.imgs
 						.imgs__list
-							.imgs__list-wrap
-								.imgs__list-list
-									.imgs__list-item
-										img(src="" alt="")
-									.imgs__list-item
-										img(src="" alt="")
-									.imgs__list-item
-										img(src="" alt="")
-									.imgs__list-item
-										img(src="" alt="")
+							.imgs__list-wrap.swiper-container
+								.imgs__list-list.swiper-wrapper
+									.imgs__list-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
+									.imgs__list-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
+									.imgs__list-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
+									.imgs__list-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
 
 						.imgs__thumbs
-							.imgs__thumbs-wrap
-								.imgs__thumbs-list
-									.imgs__thumbs-item
-										img(src="" alt="")
-									.imgs__thumbs-item
-										img(src="" alt="")
-									.imgs__thumbs-item
-										img(src="" alt="")
-									.imgs__thumbs-item
-										img(src="" alt="")
+							.imgs__thumbs-wrap.swiper-container
+								.imgs__thumbs-list.swiper-wrapper
+									.imgs__thumbs-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
+									.imgs__thumbs-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
+									.imgs__thumbs-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
+									.imgs__thumbs-item.swiper-slide
+										img(src="_/uploads/object-1.png" alt="")
 			+object
 			+object
 			+object
 
-		.objects__more.more
-			.more__wrap
-				.more__icon
-				.more__text #[span Смотреть еще работы]
+		.objects__more.btn-more
+			.btn-more__wrap.btn
+				.btn-more__icon
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 458.186 458.186" style="enable-background:new 0 0 458.186 458.186;" xml:space="preserve"><path d="M445.651,201.95c-1.485-9.308-10.235-15.649-19.543-14.164c-9.308,1.485-15.649,10.235-14.164,19.543c0.016,0.102,0.033,0.203,0.051,0.304c17.38,102.311-51.47,199.339-153.781,216.719c-102.311,17.38-199.339-51.47-216.719-153.781S92.966,71.232,195.276,53.852c62.919-10.688,126.962,11.29,170.059,58.361l-75.605,25.19c-8.944,2.976-13.781,12.638-10.806,21.582c0.001,0.002,0.002,0.005,0.003,0.007c2.976,8.944,12.638,13.781,21.582,10.806c0.003-0.001,0.005-0.002,0.007-0.002l102.4-34.133c6.972-2.322,11.675-8.847,11.674-16.196v-102.4C414.59,7.641,406.949,0,397.523,0s-17.067,7.641-17.067,17.067v62.344C292.564-4.185,153.545-0.702,69.949,87.19s-80.114,226.911,7.779,310.508s226.911,80.114,310.508-7.779C435.905,339.799,457.179,270.152,445.651,201.95z"/></svg>
+				.btn-more__text #[span Смотреть еще работы]
