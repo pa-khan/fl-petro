@@ -121,15 +121,75 @@ document.addEventListener('DOMContentLoaded', ()=>{
 	let $estimate = document.querySelector('.estimate__imgs-wrap');
 
 	if ($estimate) {
-		let arrowPrev = document.querySelector('.estimate__imgs-arrow.--prev'),
-				arrowNext = document.querySelector('.estimate__imgs-arrow.--next');
+		let $arrowPrev = document.querySelector('.estimate__imgs-arrow.--prev'),
+				$arrowNext = document.querySelector('.estimate__imgs-arrow.--next');
 		
 		new Swiper($estimate, {
 			loop: true,
 			navigation: {
-				prevEl: arrowPrev,
-				nextEl: arrowNext
+				prevEl: $arrowPrev,
+				nextEl: $arrowNext
 			}
 		});
 	}
+
+	let $reviews = document.querySelectorAll('.reviews__list');
+
+	if ($reviews) {
+		$reviews.forEach(($review)=>{
+			let $arrowPrev = $review.querySelector('.reviews__arrow.--prev'),
+					$arrowNext = $review.querySelector('.reviews__arrow.--next'),
+					$slider    = $review.querySelector('.reviews__list-case');
+
+			new Swiper($slider, {
+				loop: true,
+				slidesPerView: 2,
+				navigation: {
+					prevEl: $arrowPrev,
+					nextEl: $arrowNext
+				}
+			})
+
+		});
+	}
+
+	let $office = document.querySelector('.office');
+
+	if ($office) {
+		let $arrowPrev = $office.querySelector('.office__arrow.--prev'),
+				$arrowNext = $office.querySelector('.office__arrow.--next'),
+				$slider    = $office.querySelector('.office__slider');
+
+		new Swiper($slider, {
+			loop: true,
+			spaceBetween: 172,
+			navigation: {
+				prevEl: $arrowPrev,
+				nextEl: $arrowNext
+			}
+		})
+	}
+
+	let $map = document.querySelector('#map');
+
+	if ($map && ymaps) {
+		ymaps.ready(mapInit);
+
+		function mapInit() {
+			let mapLng  = parseFloat($map.getAttribute('data-lng')),
+					mapLat  = parseFloat($map.getAttribute('data-lat'));
+
+			let ymap = new ymaps.Map($map, {
+				center: [mapLng, mapLat],
+				zoom: 15,
+				controls: []
+			});
+
+			let placemark = new ymaps.Placemark([mapLng, mapLat], {}, {
+				iconLayout: 'default#image'
+			});
+
+			ymap.geoObjects.add(placemark);
+		}
+	} 
 });

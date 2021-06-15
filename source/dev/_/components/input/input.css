@@ -27,6 +27,13 @@
 .input.--icon .input__area {
   padding-right: 55px;
 }
+.input.--bg-white .input__area {
+  border-radius: 5px;
+  background-color: #fff;
+}
+.input.--bg-white .input__icon svg path {
+  opacity: 0.25;
+}
 .input.--bg-gray .input__area {
   border-radius: 5px;
   background-color: #f4f4f4;
