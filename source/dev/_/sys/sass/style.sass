@@ -272,6 +272,7 @@ sup
 		font-size: 11px
 		opacity: 0.7
 		color: #575e62
+		text-transform: uppercase
 	&__value
 		font-size: 11px
 		text-transform: uppercase
@@ -3118,7 +3119,217 @@ sup
 				transform: translateY(-50%)
 				
 	&__wrap
-		padding: 65px 70px 65px 70px
+		padding: 60px 70px 62px 70px
 		border-radius: 8px
 		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
 		background-color: #fff
+	&__data
+		width: 530px
+		&-col
+			width: 50%
+
+	&__img
+		position: absolute
+		bottom: 0
+		right: 395px
+		width: 174px
+		height: 285px
+		overflow: hidden
+		img
+			max-height: none  !important
+
+	&__feedback
+		margin-left: auto
+		width: 100%
+		max-width: 225px
+	&__title
+		font-size: 16px
+		letter-spacing: 0.32px
+		text-transform: uppercase
+		margin-bottom: 17px
+	&__time
+		margin-top: 5px
+	&__consult
+		margin-top: 35px
+	&__btn
+		margin-top: 30px
+		&.btn
+			padding-left: 10px
+			padding-right: 10px
+
+	&__contact
+		margin-bottom: 25px
+		&:last-of-type
+			margin-bottom: 0
+
+
+.b-consult
+	display: flex
+	align-items: center
+	&__icon
+		width: 12px
+		min-width: 12px
+		margin-right: 10px
+		position: relative
+		top: -1px
+	&__link
+		font-size: 12px
+		font-weight: 700
+		letter-spacing: 0.48px
+		text-transform: uppercase
+		width: calc(100% - 12px)
+		a
+			color: $green
+
+
+.order
+	padding-top: 190px
+	overflow: hidden
+	&__img-wrap
+		width: 468px
+		position: relative
+		margin-bottom: -75px
+	&__person
+		position: absolute
+		top: 55px
+		left: 0
+		&:before
+			content: ''
+			top: 100%
+			left: 15px
+			margin-top: 10px
+			position: absolute
+			width: 157px
+			height: 119px
+			background: url('../imgs/line-5.svg') no-repeat center
+	&__img
+		margin-left: 18px
+	&__content
+		width: 100%
+		max-width: 580px
+		padding-top: 45px
+		margin-left: auto
+		margin-right: 100px
+	&__title
+		margin-bottom: 8px
+	&__subtitle
+		margin-bottom: 17px
+	&__text
+		margin-bottom: 41px
+		h3
+			font-size: 18px
+			margin-bottom: 13px
+	&__call
+		margin-top: 45px
+		border-radius: 0
+		padding-top: 45px
+		padding-bottom: 45px
+		border-top: 1px solid rgba(72,78,81,.1)
+		border-bottom: 1px solid rgba(72,78,81,.1)
+		.call
+			&__wrap
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+			&__title
+				margin-top: -3px
+				margin-right: 10px
+				margin-bottom: 0
+			&__phone
+				margin-bottom: 0
+			&__desc
+				width: 100%
+				margin-top: 8px
+			&__icon
+				top: -60px
+				
+	&__bg
+		img
+			object-position: center bottom
+
+
+.footer
+	&__top
+		padding-top: 50px
+		padding-bottom: 45px
+		&-wrap
+			align-items: center
+		
+	&__company
+		max-width: 200px
+		margin-right: 95px
+	&__address
+		width: 100%
+		max-width: 175px
+	&__logo
+		display: inline-block
+		margin-bottom: 5px
+		
+	&__desc
+		opacity: 0.5
+		font-size: 12px
+		line-height: 19px
+	&__links
+		margin-left: auto
+		margin-right: auto
+	&__contacts
+		padding-top: 4px
+		margin-right: 24px
+	&__phone
+		margin-bottom: 5px
+	&__mid
+		padding-top: 45px
+		padding-bottom: 40px
+		border-top: 1px solid #ececec
+		border-bottom: 1px solid #ececec
+	&__navs
+		width: 730px
+	&__nav
+		margin-right: 95px
+		&:last-of-type
+			margin-right: 0
+		ul
+			flex-direction: column
+		li
+			margin-bottom: 7px
+			&:last-of-type
+				margin-bottom: 0
+		a
+			font-size: 11px
+			letter-spacing: 0.4px
+			text-transform: uppercase
+
+	&__policy
+		font-size: 12px
+		width: 210px
+		&-link
+			margin-bottom: 5px
+			a
+				color: #575e62
+				border-color: #eee
+				&:hover
+					color: $blue
+					border-color: transparent
+		&-text
+			opacity: 0.7
+			line-height: 18px
+			white-space: nowrap
+	&__dev
+		width: 152px
+		margin-left: auto
+
+	&__bot
+		padding-top: 35px
+		padding-bottom: 45px
+		opacity: 0.7
+		color: #575e62
+		font-size: 12px
+		line-height: 18px
+		text-align: center
+	&__copy
+		width: 100%
+.dev
+	&__title
+		opacity: 0.6
+		font-size: 9.5px
+		margin-top: -4px

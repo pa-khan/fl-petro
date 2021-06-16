@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			});
 
 			ymap.geoObjects.add(placemark);
+			ymap.behaviors.disable('scrollZoom')
 		}
 	} 
 });

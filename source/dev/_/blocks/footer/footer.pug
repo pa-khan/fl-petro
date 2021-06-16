@@ -6,11 +6,12 @@ footer.footer
 			.footer__top-wrap.row
 				.footer__company
 					a.footer__logo(href="index.html")
-						img(src="" alt="")
+						img(src="_/uploads/logo.png" alt="")
 					.footer__desc Механизированная штукатурка #[br]и черновая отделка в Москве и МО
 				.footer__address.contact
 					.contact__head
 						.contact__icon
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 487.724 487.724" style="enable-background:new 0 0 487.724 487.724;" xml:space="preserve"><path d="M236.925,0.124c-96.9,3.4-177.4,79-186.7,175.5c-1.9,19.3-0.8,38,2.6,55.9l0,0c0,0,0.3,2.1,1.3,6.1 c3,13.4,7.5,26.4,13.1,38.6c19.5,46.2,64.6,123.5,165.8,207.6c6.2,5.2,15.3,5.2,21.6,0c101.2-84,146.3-161.3,165.9-207.7 c5.7-12.2,10.1-25.1,13.1-38.6c0.9-3.9,1.3-6.1,1.3-6.1l0,0c2.3-12,3.5-24.3,3.5-36.9C438.425,84.724,347.525-3.776,236.925,0.124 z M243.825,291.324c-52.2,0-94.5-42.3-94.5-94.5s42.3-94.5,94.5-94.5s94.5,42.3,94.5,94.5S296.025,291.324,243.825,291.324z"/></svg>
 						.contact__title ОФИС
 					.contact__value ул. Инструментальная, д.3 
 				.footer__links.links
@@ -55,9 +56,9 @@ footer.footer
 				.footer__policy
 					.footer__policy-link #[a(href="") Политика конфиденциальности]
 					.footer__policy-text Копирование элементов сайта #[br]запрещено. Закон РФ "Об авторском #[br]праве и смежных правах"
-				a.footer__dev.dev(href="" target="_blank")
+				a.footer__dev.dev(href="https://polovinkin.pro/?utm_source=ref-podval&utm_medium=cpc&utm_campaign=1" target="_blank")
 					.dev__logo
-						img(src="" alt="")
+						img(src="_/uploads/polovinkin.png" alt="")
 					.dev__title Агентство интернет-маркетинга
 	.footer__bot
 		.case
@@ -70,8 +71,8 @@ footer.footer
 		.modal(id='modal-'+id)
 			.modal__close
 			.modal__wrap
-				.modal__title= title
-				.modal__text= text
+				.modal__title!= title
+				.modal__text!= text
 				.modal__form
 					if attributes.select
 						// .modal__select.select.--md.--bg-gray
@@ -104,7 +105,7 @@ footer.footer
 
 					.modal__input.input.--md.--bg-gray
 						.input__wrap
-							input.input__area(type="number" name="phone" placeholder="+7 ( ___ ) ___ - __ - __")
+							input.input__area(type="tel" name="phone" placeholder="+7 ( ___ ) ___ - __ - __")
 						.input__icon
 					button.modal__btn.btn.--md.--bg-blue= btn
 					.modal__policy Нажимая на кнопку, вы даете согласие #[br]на обработку своих персональных данных #[br]и соглашаетесь с политикой конфиденциальности
