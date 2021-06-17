@@ -3,10 +3,53 @@
 .textarea
 	&__wrap
 		position: relative
+	&__label
+		font-size: 14px
+		opacity: 0.7
+		margin-bottom: 12px
 	&__area
 		width: 100%
 		font-family: $ffMain
 		color: $black
+		background-color: transparent
 		resize: none
 		&::placeholder
+			opacity: 0.8
 			color: $black
+	&__icon
+		position: absolute
+		top: 50%
+		right: 30px
+		width: 12px
+		font-size: 0
+		transform: translateY(-50%)
+
+	&.--md
+		.textarea
+			&__area
+				font-size: 14px
+				height: 140px
+				padding: 25px 29px
+	&.--icon
+		.textarea
+			&__area
+				padding-right: 55px
+	&.--bg-white
+		.textarea
+			&__area
+				border-radius: 5px
+				background-color: #fff
+			&__icon
+				svg
+					path
+						opacity: 0.25
+	&.--bg-gray
+		.textarea
+			&__area
+				border-radius: 5px
+				background-color: #f4f4f4
+				box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05)
+			&__icon
+				svg
+					path
+						opacity: 0.2

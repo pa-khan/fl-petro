@@ -1,71 +1,21 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Контакты"
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
 		]
 block content
-	.about.bg-wrap
-		.case
-			+breadcrumbs('about__breadcrumbs')
-			.about__title.h1 О компании ПетроСтрой
-			.about__list.row
-				.about__item
-					.about__icon
-						img(src="_/uploads/" alt="")
-					.about__name 5 лет
-					.about__text работы в сфере строительства #[br]домов, фундаментов #[br]и черновых работах
-				.about__item
-					.about__icon
-						img(src="_/uploads/" alt="")
-					.about__name 45 специалистов
-					.about__text работают у нас #[br]на постоянной основе
-				.about__item
-					.about__icon
-						img(src="_/uploads/" alt="")
-					.about__name 10+ поставщиков
-					.about__text строительных материалов, #[br]у которых мы получаем для вас #[br]оптовую скидку и экономим до 30%
-				.about__item
-					.about__icon
-						img(src="_/uploads/" alt="")
-					.about__name 500+ объектов
-					.about__text мы сделали: начиная от студия 20 м#[sup 2] #[br]заканчивая коттеджами 2000 м#[sup 2] #[br]и коммерческими комещениями
-			.about__img
-				img(src="_/uploads/" alt="")
-		.about__bg.bg
-			img(src="_/uploads/" alt="")
+	include ../../parts/about
+	include ../../parts/team
 
+	- classFix = '--pb'
+	include ../../parts/fix
+	include ../../parts/de
+	include ../../parts/economy
+	include ../../parts/reviews
 
-	.team
-		.case
-			.team__title.h1 Над вашим объектом будет #[br]работать целая команда
-			.team__list.row
-				.team__item
-					.team__name ПЕТР НИКИТИН
-					.team__position Руководитель #[br]компании
-					.team__img
-						img(src="_/uploads/" alt="")
-					a.team__btn.btn.--md.--bg-blue(href="") консультация
-
-				.team__item
-					.team__name ПЕТР НИКИТИН
-					.team__position Руководитель #[br]компании
-					.team__img
-						img(src="_/uploads/" alt="")
-					a.team__btn.btn.--md.--bg-blue(href="") консультация
-
-				.team__item
-					.team__name ПЕТР НИКИТИН
-					.team__position Руководитель #[br]компании
-					.team__img
-						img(src="_/uploads/" alt="")
-					a.team__btn.btn.--md.--bg-blue(href="") консультация
-
-				.team__item
-					.team__name ПЕТР НИКИТИН
-					.team__position Руководитель #[br]компании
-					.team__img
-						img(src="_/uploads/" alt="")
-					a.team__btn.btn.--md.--bg-blue(href="") консультация
+	- classYoutube = '--no-bg'
+	include ../../parts/youtube
+	include ../../parts/questions

@@ -1,12 +1,50 @@
 .textarea__wrap {
   position: relative;
 }
+.textarea__label {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
 .textarea__area {
   width: 100%;
   font-family: "Manrope", sans-serif;
   color: #484e51;
+  background-color: transparent;
   resize: none;
 }
 .textarea__area::placeholder {
+  opacity: 0.8;
   color: #484e51;
+}
+.textarea__icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 12px;
+  font-size: 0;
+  transform: translateY(-50%);
+}
+.textarea.--md .textarea__area {
+  font-size: 14px;
+  height: 140px;
+  padding: 25px 29px;
+}
+.textarea.--icon .textarea__area {
+  padding-right: 55px;
+}
+.textarea.--bg-white .textarea__area {
+  border-radius: 5px;
+  background-color: #fff;
+}
+.textarea.--bg-white .textarea__icon svg path {
+  opacity: 0.25;
+}
+.textarea.--bg-gray .textarea__area {
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.textarea.--bg-gray .textarea__icon svg path {
+  opacity: 0.2;
 }

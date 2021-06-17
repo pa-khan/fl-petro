@@ -10,7 +10,7 @@
 // @import ../../components/checkbox/checkbox
 // @import ../../components/radio/radio
 @import ../../components/input/input
-// @import ../../components/textarea/textarea
+@import ../../components/textarea/textarea
 @import ../../components/select/select
 // @import ../../components/tabs/tabs
 // @import ../../components/popup/popup
@@ -1131,6 +1131,8 @@ sup
 
 
 .fix
+	&.--pb
+		padding-bottom: 130px
 	&__content
 		padding-top: 115px
 		padding-bottom: 60px
@@ -1254,6 +1256,11 @@ sup
 	&__wrap
 		display: flex
 		flex-wrap: wrap
+	&__textarea
+		width: calc(100% - 30px)
+		margin-left: 15px
+		margin-right: 15px
+		margin-bottom: 20px
 	&__policy
 		opacity: 0.5
 		font-size: 12px
@@ -2732,6 +2739,8 @@ sup
 	padding-top: 100px
 	padding-bottom: 120px
 	background-color: #f4f4f4
+	&.--no-bg
+		background-color: transparent
 	&__title
 		text-align: center
 		margin-left: auto
@@ -3279,6 +3288,184 @@ sup
 	&__bg
 		img
 			object-position: center bottom
+
+
+.about
+	padding-bottom: 580px
+	overflow: hidden
+	background-color: #f4f4f4
+	&__title
+		text-align: center
+		margin-left: auto
+		margin-right: auto
+		margin-top: 20px
+		margin-bottom: 110px
+	&__item
+		width: calc(100% / 4)
+		padding: 0 10px 45px
+		border-radius: 8px
+		background-color: #ffffff
+		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.05)
+		&:nth-of-type(4)
+			.about
+				&__icon
+					left: 7px
+	&__icon
+		position: relative
+		margin-top: -42px
+		height: 98px
+		margin-bottom: 8px
+		img
+			margin-left: auto
+			margin-right: auto
+	&__name
+		font-size: 16px
+		font-weight: 700
+		font-family: $montserrat
+		letter-spacing: 0.32px
+		text-align: center
+		text-transform: uppercase
+		margin-bottom: 8px
+	&__text
+		opacity: 0.8
+		line-height: 23px
+		text-align: center
+		sup
+			font-size: .5em
+	&__img
+		position: absolute
+		bottom: -75px
+		left: 50%
+		width: 1231px
+		transform: translateX(-50%)
+
+
+.breadcrumbs
+	padding-top: 35px
+	&__list
+		display: inline
+	&__item
+		display: inline
+		position: relative
+		font-size: 11px
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		&:after
+			content: '/'
+			margin-left: 5px
+			margin-right: 5px
+		&:first-of-type
+			margin-left: 20px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: -20px
+				margin-top: -1px
+				transform: translateY(-50%)
+				width: 10px
+				height: 10px
+				background: url('../imgs/house.png') no-repeat center
+		&:last-of-type
+			&:after
+				display: none
+	&__text
+		display: inline
+
+	&__text
+		color: #b7babb
+	&__link
+		&:hover
+			color: $blue
+
+.team
+	padding-top: 100px
+	padding-bottom: 120px
+	background-color: #f4f4f4
+	&__title
+		text-align: center
+		margin-bottom: 50px
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+	&__item
+		display: flex
+		align-items: center
+		flex-direction: column
+		position: relative
+		width: calc(100% / 4 - 30px)
+		min-height: 578px
+		margin-left: 15px
+		margin-right: 15px
+		border-radius: 8px
+		padding: 48px 15px 30px
+		text-align: center
+		background-color: #ffffff
+		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
+	&__name
+		font-size: 16px
+		font-weight: 700
+		font-family: $montserrat
+		text-transform: uppercase
+		margin-bottom: 10px
+	&__position
+		opacity: 0.8
+		font-size: 13px
+		line-height: 20px
+		color: #111111
+	&__btn
+		max-width: 100%
+		margin: auto 20px 0
+	&__img
+		position: absolute
+		bottom: 0
+		right: 0
+
+
+.questions
+	padding-top: 0
+	overflow: hidden
+	&__img-wrap
+		width: 675px
+		max-height: 880px
+		position: relative
+		// overflow: hidden
+	&__person
+		position: absolute
+		top: 85px
+		left: 15px
+	&__img
+		width: 561px
+		max-height: 910px
+		overflow: hidden
+		transform: scale(-1,1)
+		margin-left: -90px
+	&__content
+		width: 100%
+		max-width: 665px
+		padding-top: 52px
+		margin-left: -170px
+	&__title
+		margin-bottom: 9px
+	&__subtitle
+		margin-bottom: 13px
+
+	&__form
+		margin-top: 70px
+		margin-left: -400px
+		padding-top: 80px
+		padding-bottom: 75px
+		padding-left: 400px
+		padding-right: 100px
+		.form
+			&__btn
+				&.btn
+					padding-left: 10px
+					padding-right: 10px
+				
+	&__bg
+		object-position: center bottom
+
 
 
 .footer
