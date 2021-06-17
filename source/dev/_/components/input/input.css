@@ -1,6 +1,11 @@
 .input__wrap {
   position: relative;
 }
+.input__label {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
 .input__area {
   width: 100%;
   font-family: "Manrope", sans-serif;
