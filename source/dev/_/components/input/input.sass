@@ -52,3 +52,25 @@
 				svg
 					path
 						opacity: 0.2
+
+	&.--focus, &.--filed
+		.input
+			&__icon
+				svg
+					path
+						opacity: 0.5
+
+
+	&.--error
+		.input
+			&__area
+				color: #ff1717
+				&::placeholder
+					color: #ff1717
+			&.--icon
+				svg
+					path
+						opacity: 1
+						fill: #ff1717
+				
+		

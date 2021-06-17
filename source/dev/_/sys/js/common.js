@@ -7,6 +7,50 @@ let mailPattern = /^[0-9a-z_-]+@[0-9a-z_-]+.[a-z]{2,5}$/i;
 
 
 document.addEventListener('DOMContentLoaded', ()=>{
+	let $inputs = document.querySelectorAll('.input');
+
+	if ($inputs) {
+		$inputs.forEach(($input)=>{
+			let $area = $input.querySelector('.input__area');
+
+			if ($area.value != '') {
+				$input.classList.add('--filled');
+			}
+
+			$area.addEventListener('input', ()=>{
+				if ($area.value != '') {
+					$input.classList.add('--filled');
+				}				
+			});
+
+			$area.addEventListener('focusin', ()=>{
+				$input.classList.add('--focus');
+			});
+
+			$area.addEventListener('focusout', ()=>{
+				$input.classList.remove('--focus');
+			});
+
+		});
+	}
+
+
+	let $files = document.querySelectorAll('.file');
+	
+	if ($files) {
+		$files.forEach(($file)=>{
+			let $input   = $file.querySelector('.file__input'),
+					$message = $file.querySelector('.file__message');
+
+			$input.addEventListener('change', (event)=>{
+				let file = event.target.files[0];
+
+				$message.innerText = file.name; 
+			})
+		});
+	}
+
+
 	let $calc = document.querySelector('.calc');
 	if ($calc) {
 		function Calc(){
@@ -192,5 +236,34 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			ymap.geoObjects.add(placemark);
 			ymap.behaviors.disable('scrollZoom')
 		}
-	} 
+	}
+
+	let $work = document.querySelector('.work');
+
+	if ($work) {
+		let $sliderList   = $work.querySelector('.w-sli__list-wrap'),
+				$sliderThumbs = $work.querySelector('.w-sli__thumbs-wrap'),
+				$arrowPrev    = $work.querySelector('.w-sli__arrow.--prev'),
+				$arrowNext    = $work.querySelector('.w-sli__arrow.--next'),
+				imgsThumbs,
+				imgsList;
+
+		
+		imgsThumbs = new Swiper($sliderThumbs, {
+			slidesPerView: 4,
+			clickable: true,
+			spaceBetween: 30,
+		});
+
+		imgsList = new Swiper($sliderList, {
+			navigation: {
+				prevEl: $arrowPrev,
+				nextEl: $arrowNext
+			},
+			thumbs: {
+				swiper: imgsThumbs
+			}
+		});
+
+	}
 });

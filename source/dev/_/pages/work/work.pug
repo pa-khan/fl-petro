@@ -1,74 +1,90 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Механизированная штукатурка стен, откосов в загородном доме 800 м2"
 		breadcrumbs = [
 			['Главная', 'index.html'],
+			['Наши работы', 'works.html'],
 			[title]
 		]
 block content
-	.work
+	.work.first-slide
 		.case
 			+breadcrumbs('work__breadcrumbs')
 			.work__imgs.w-sli
 				.w-sli__list
-					.w-sli__list-wrap
-						.w-sli__list-list
-							.w-sli__list-item
-								img(src="_/uploads/" alt="")
-							.w-sli__list-item
-								img(src="_/uploads/" alt="")
-							.w-sli__list-item
-								img(src="_/uploads/" alt="")
-							.w-sli__list-item
-								img(src="_/uploads/" alt="")
+					.w-sli__list-wrap.swiper-container
+						.w-sli__list-list.swiper-wrapper
+							.w-sli__list-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__list-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__list-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__list-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__list-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+					.w-sli__arrows
+						.w-sli__arrow.btn.arrow.--bg-white.--round.--prev
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></svg>
+						.w-sli__arrow.btn.arrow.--bg-white.--round.--next
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></svg>
 
 				.w-sli__thumbs
-					.w-sli__thumbs-wrap
-						.w-sli__thumbs-list
-							.w-sli__thumbs-item
-								img(src="_/uploads/" alt="")
-							.w-sli__thumbs-item
-								img(src="_/uploads/" alt="")
-							.w-sli__thumbs-item
-								img(src="_/uploads/" alt="")
-							.w-sli__thumbs-item
-								img(src="_/uploads/" alt="")
+					.w-sli__thumbs-wrap.swiper-container
+						.w-sli__thumbs-list.swiper-wrapper
+							.w-sli__thumbs-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__thumbs-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__thumbs-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__thumbs-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
+							.w-sli__thumbs-item.swiper-slide
+								img(src="_/uploads/work-sample.png" alt="")
 			.work__inner
 				.work__title.h1 Механизированная штукатурка стен, откосов в загородном доме 800 м2
-				.work__wrap
+				.work__wrap.row
 					.work__content
-						.work__data.row
-							.works__data-item.d
-								.d__icon
-								.d__text
-									.d__title Площадь по полу:
-									.d__value 1000 м#[sup 2]
+						.work__data.data
+							.data__list.row
+								.data__item
+									.data__icon
+										img(src="_/uploads/tape-green.svg" alt="")
+									.data__text
+										.data__title Площадь по полу:
+										.data__value 1000 м#[sup 2]
 
-							.works__data-item.d
-								.d__icon
-								.d__text
-									.d__title Площадь по стенам:
-									.d__value 4000 м#[sup 2]
+								.data__item
+									.data__icon
+										img(src="_/uploads/tape-green.svg" alt="")
+									.data__text
+										.data__title Площадь по стенам:
+										.data__value 4000 м#[sup 2]
 
-							.works__data-item.d
-								.d__icon
-								.d__text
-									.d__title СРОК: 
-									.d__value 4 дня
+								.data__item
+									.data__icon
+										img(src="_/uploads/clock-green.svg" alt="")
+									.data__text
+										.data__title СРОК: 
+										.data__value 4 дня
 
-							.works__data-item.d.--full
-								.d__icon
-								.d__text
-									.d__title Описание:
-									.d__value Клиент заказал у нас услугу по механизированной штукатурке в собственной #[br]квартире. Мы сделали замеры, а далее провели оштукатуривание. Он получил #[br]качественно выполненную работу без лишних временных затрат. #[br]Вся работа обошлась в 220 000 рублей (сумма уже включает в себя #[br]стоимость работы и материалов)
-									
-							.works__data-item.d.--full
-								.d__icon
-								.d__text
-									.d__title Стоимость:
-									.d__value 220 000 рублей «под ключ» с доставкой, #[br]работой и материалами
-						a.work__btn.btn.--md.--bg-blue(href="") У МЕНЯ ПОХОЖАЯ ЗАДАЧА
+								.data__item.--full
+									.data__icon
+										img(src="_/uploads/info-green.svg" alt="")
+									.data__text
+										.data__title Описание:
+										.data__value Клиент заказал у нас услугу по механизированной штукатурке в собственной #[br]квартире. Мы сделали замеры, а далее провели оштукатуривание. Он получил #[br]качественно выполненную работу без лишних временных затрат. #[br]Вся работа обошлась в 220 000 рублей (сумма уже включает в себя #[br]стоимость работы и материалов)
+										
+								.data__item.--full
+									.data__icon
+										img(src="_/uploads/clock-green.svg" alt="")
+									.data__text
+										.data__title Стоимость:
+										.data__value 220 000 рублей «под ключ» с доставкой, #[br]работой и материалами
+						a.work__btn.btn.--md.--bg-blue(href="javascript:;" data-fancybox="" data-src="#modal-calc") У МЕНЯ ПОХОЖАЯ ЗАДАЧА
 					.work__gifts.w-gifts
 						.w-gifts__list
 							.w-gifts__item
@@ -76,16 +92,19 @@ block content
 									.w-gifts__name Гарантия 3 года
 									.w-gifts__desc Если со штукатуркой будут проблемы, #[br]исправим их за свой счет
 								.w-gifts__img
-									img(src="_/uploads/" alt="")
+									img(src="_/uploads/w-gifts-1.png" alt="")
 							.w-gifts__item
 								.w-gifts__text
 									.w-gifts__name Сэкономим вам до 30% #[br]на материалах
 									.w-gifts__desc Покупаем по оптовым ценам #[br]штукатурку напрямую с завода #[br]и храним на своём складе
 								.w-gifts__img
-									img(src="_/uploads/" alt="")
+									img(src="_/uploads/w-gifts-2.png" alt="")
 							.w-gifts__item
 								.w-gifts__text
 									.w-gifts__name даем гарантию лучшей цены
 									.w-gifts__desc Если найдете дешевле, #[br]мы снизим цену на 10%
 								.w-gifts__img
-									img(src="_/uploads/" alt="")
+									img(src="_/uploads/w-gifts-3.png" alt="")
+
+	- classReady = '--bg'
+	include ../../parts/ready

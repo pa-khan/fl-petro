@@ -93,3 +93,6 @@ path, circle, rect, line {
   min-height: 100%;
   overflow: hidden;
 }
+.wrap.--no-overflow {
+  overflow: visible;
+}

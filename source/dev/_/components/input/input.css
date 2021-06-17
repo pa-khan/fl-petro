@@ -47,3 +47,16 @@
 .input.--bg-gray .input__icon svg path {
   opacity: 0.2;
 }
+.input.--focus .input__icon svg path, .input.--filed .input__icon svg path {
+  opacity: 0.5;
+}
+.input.--error .input__area {
+  color: #ff1717;
+}
+.input.--error .input__area::placeholder {
+  color: #ff1717;
+}
+.input.--error .input.--icon svg path {
+  opacity: 1;
+  fill: #ff1717;
+}

@@ -1,5 +1,9 @@
-.cooperate.bg-wrap
+include ../sys/pug/vars
+
+.cooperate.bg-wrap(class=cooperatePage?'--page':null)
 	.case
+		if (cooperatePage)
+			+breadcrumbs('cooperate__breadcrumbs')
 		.cooperate__title.h1 #[strong Сотрудничаем] со строительными #[br]компаниями и бригадами
 		.cooperate__wrap.row
 			.cooperate__content

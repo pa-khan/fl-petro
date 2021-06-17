@@ -1,10 +1,21 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Контакты"
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
 		]
 block content
+	.contacts-p.first-slide
+		.case
+			+breadcrumbs('contacts-p__breadcrumbs')
+			.contacts-p__title.h1.--mt-mb Контакты компании ПетроСтрой
+
+	- contactsPage = true
+	include ../../parts/contacts
+	include ../../parts/map
 	
+	
+	- classQuestions = '--pt'
+	include ../../parts/questions

@@ -14,7 +14,7 @@ html(lang="ru")
 		//- meta(name="theme-color" content="#ffffff")
 		title=title
 	body
-		.wrap
+		.wrap(class=wrapClass)
 			link(rel="stylesheet" href="_/sys/css/style.css" + version)
 			
 
@@ -32,7 +32,6 @@ html(lang="ru")
 			script(src="_/sys/libs/fancybox/dist/jquery.fancybox.min.js")
 			script(src="_/sys/js/common.js" + version)
 			
-			+script('input', 'components')
 			+script('check', 'components')
 			+script('select', 'components')
 			+script('slider', 'components')
