@@ -16,16 +16,14 @@ html(lang="ru")
 	body
 		.wrap(class=wrapClass)
 			link(rel="stylesheet" href="_/sys/css/style.css" + version)
+			link(rel="stylesheet" href="_/sys/css/responsive.css" + version)
 			
 
-			+style('header', 'blocks')
 			include ../blocks/header/header
-			+script('header', 'blocks')
 			
 			main.main
 				block content
 
-			+style('footer', 'blocks')
 			include ../blocks/footer/footer
 			
 			script(src="_/sys/libs/jquery/dist/jquery.slim.min.js")

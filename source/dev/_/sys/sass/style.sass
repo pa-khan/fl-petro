@@ -151,7 +151,7 @@ sup
 	font-size: 47px
 	line-height: 66px
 	font-weight: 500
-	letter-spacing: 0.94px
+	letter-spacing: 0.60px
 	text-transform: uppercase
 	font-family: $montserrat
 	margin-left: -3px
@@ -270,7 +270,9 @@ sup
 		margin-left: 40px
 		
 	&__links
-		margin-left: 55px
+		margin-left: 66px
+		position: relative
+		margin-top: -9px
 		
 	&__contacts
 		display: flex
@@ -362,7 +364,7 @@ sup
 	a
 		color: $blue
 		font-size: 11px
-		letter-spacing: 0.44px
+		letter-spacing: 0.25px
 		text-transform: uppercase
 		border-bottom: 1px dashed $blue
 		padding-bottom: 3px
@@ -435,7 +437,7 @@ sup
 	padding-bottom: 140px
 	height: 1005px
 	&__content
-		padding-top: 81px
+		padding-top: 76px
 	&__title
 		strong
 			font-size: 54px
@@ -446,27 +448,31 @@ sup
 	&__subtitle
 		display: flex
 		align-items: center
-		margin-top: 20px
+		margin-top: 7px
 		margin-bottom: 25px
+		padding-left: 3px
 		svg
-			width: 10px
+			width: 14px
 			path
 				fill: #c5c7c8
 		span
-			margin-left: 15px
+			margin-left: 11px
 	&__round
-		top: 52px
-		right: 15px
+		top: 50px
+		right: 20px
 		position: absolute
+		.round
+			&__img
+				margin-top: -45px
 
 	&__btn
-		margin-top: 40px
+		margin-top: 36px
 		display: inline-flex
 
 	&__img
 		z-index: 2
 		position: absolute
-		bottom: -180px
+		bottom: -188px
 		left: 553px
 
 	&__tool
@@ -486,11 +492,13 @@ sup
 		width: 145px
 		img
 			position: relative
-			left: 10px
+			left: 17px
 	&__text
-		padding: 36px 150px 36px 0
+		font-size: 14px
+		padding: 32px 150px 36px 0
 		line-height: 27px
 		width: calc(100% - 145px)
+		letter-spacing: 0.2px
 		strong
 			font-weight: 600
 			color: #2b2d2e
@@ -518,7 +526,7 @@ sup
 .advantages
 	z-index: 10
 	position: relative
-	margin-top: -140px
+	margin-top: -148px
 	// &__wrap
 	&__list
 		position: relative
@@ -542,7 +550,7 @@ sup
 		align-items: center
 		width: calc(100% / 3)
 		text-align: center
-		padding: 50px 35px 85px
+		padding: 50px 35px 50px
 		border-right: 1px solid rgb(72,78,81,0.07)
 		border-bottom: 1px solid rgb(72,78,81,0.07)
 		&:nth-of-type(1)
@@ -561,12 +569,22 @@ sup
 		&:nth-of-type(5)
 			.advantages
 				&__icon
+					left: 3px
+					img
+						margin-bottom: 3px
+						max-width: none  !important
+						max-height: none  !important
+						height: 135px
 					// top: 5px
+		&:nth-of-type(6)
+			.advantages
+				&__icon
+					top: -16px
 	&__icon
 		position: relative
 		width: 100%
 		height: 115px
-		margin-bottom: 15px
+		margin-bottom: 11px
 		img
 			position: absolute
 			left: 50%
@@ -592,7 +610,7 @@ sup
 		height: 40px
 		border-radius: 50%
 		border: 1px solid rgba(0,0,0,.1)
-		margin-bottom: 15px
+		margin-bottom: 12px
 	&__name
 		font-size: 13px
 		line-height: 20px
@@ -600,12 +618,13 @@ sup
 		letter-spacing: 0.78px
 		font-family: $montserrat
 		text-transform: uppercase
-		margin-bottom: 8px
+		margin-bottom: 6px
 	&__position
 		font-size: 13px
 		line-height: 20px
 		color: #111111
 		opacity: 0.9
+		letter-spacing: 0.5px
 
 
 .bi
@@ -622,10 +641,11 @@ sup
 			max-height: none !important
 	&__text
 		width: calc(100% - 50px)
-		padding-left: 18px
+		padding-left: 15px
+
 
 .quote
-	padding: 40px 45px
+	padding: 40px 45px 35px 42px
 	border-radius: 8px
 	background-color: #ffffff
 	box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
@@ -633,10 +653,10 @@ sup
 		display: block
 		font-size: 16px
 		text-transform: uppercase
-		margin-bottom: 14px
+		margin-bottom: 11px
 		position: relative
-		padding-left: 30px
-		letter-spacing: 0.32px
+		padding-left: 28px
+		letter-spacing: 0.25px
 		font-family: $montserrat
 		&:before
 			content: ''
@@ -651,19 +671,20 @@ sup
 		font-size: 14px
 		line-height: 27px
 		opacity: 0.85
+		letter-spacing: 0.2px
 
 .best-price
 	z-index: 1
 	position: relative
 	overflow: hidden
-	padding-top: 110px
+	padding-top: 115px
 	&__person
 		position: absolute
-		top: 0
-		left: 15px
+		top: 18px
+		left: 20px
 		&:before
 			content: ''
-			top: 15px
+			top: 10px
 			right: -117px
 			position: absolute
 			width: 137px
@@ -677,30 +698,50 @@ sup
 		max-width: 580px
 		padding-bottom: 120px
 	&__subtitle
-		margin-top: 15px
+		margin-top: 13px
 		margin-bottom: 40px
+		.bi
+			&__icon
+				img
+					width: 76px
+					height: 76px
 	&__quote
+		position: relative
 		margin-bottom: 50px
+		&:before
+			content: ''
+			position: absolute
+			top: 44px
+			left: -20px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 0 20px 21px 0
+			border-color: transparent #ffffff transparent transparent
+
 	&__img
 		position: absolute
-		bottom: -164px
-		left: 100px
+		bottom: -168px
+		left: 114px
 	&__foot
 		display: flex
 		flex-wrap: wrap
 		align-items: center
 	&__btn
 		width: 100%
-		max-width: 280px
+		max-width: 264px
 		&.btn
 			padding-left: 30px
 			padding-right: 30px
 		&-desc
 			width: 100%
 			max-width: 250px
-			margin-left: 30px
+			margin-left: 28px
+			position: relative
+			top: -4px
 			font-size: 12px
 			line-height: 22px
+			letter-spacing: 0.3px
 	&__bg
 		z-index: -1
 		position: absolute
@@ -711,7 +752,7 @@ sup
 
 
 .surface
-	padding-top: 95px
+	padding-top: 91px
 	&__title
 		text-align: center
 		margin-bottom: 45px
@@ -751,7 +792,7 @@ sup
 	&__img
 		position: relative
 		height: 131px
-		margin-bottom: 10px
+		margin-bottom: 7px
 	&__name
 		z-index: 1
 		position: relative
@@ -763,16 +804,18 @@ sup
 
 
 .price
-	padding-top: 100px
+	padding-top: 98px
 	&__title
 		text-align: center
-		margin-bottom: 20px
+		margin-bottom: 4px
 		sup
 			top: -1px
 			font-size: 0.5em
 	&__subtitle
+		// font-size: 14px
 		opacity: 0.6
 		text-align: center
+		letter-spacing: -0.3px
 		margin-bottom: 100px
 	&__list
 		margin-left: -15px
@@ -785,9 +828,11 @@ sup
 		background-color: #ffffff
 		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.05)
 	&__desc
-		margin-top: 50px
+		margin-top: 47px
 		text-align: center
 		opacity: 0.6
+		font-size: 14px
+		letter-spacing: 0.25px
 
 
 .t2
@@ -822,12 +867,14 @@ sup
 .p
 	&__title
 		opacity: 0.5
-		font-size: 10px
+		font-size: 11px
 		letter-spacing: 0.2px
 		margin-bottom: 5px
 	&__value
+		font-size: 16px
 		font-weight: 700
 		font-family: $montserrat
+		text-transform: uppercase
 		sup
 			top: 0
 	&__tog
@@ -861,40 +908,43 @@ sup
 		align-items: flex-end
 		height: 131px
 		margin-top: -47px
-		margin-bottom: 13px
+		margin-bottom: 7px
 	&__title
-		font-size: 12px
+		font-size: 14px
 		opacity: 0.5
 		text-align: center
 		margin-bottom: 7px
 	&__name
-		font-size: 16px
+		font-size: 17px
 		letter-spacing: 0.32px
 		text-align: center
 	&__body
-		padding: 42px 20px 0 45px
-		margin-bottom: 20px
+		padding: 36px 20px 0 49px
+		margin-bottom: 10px
 	&__price
 		margin-top: auto
 		margin-bottom: 45px
-		padding-left: 45px
+		padding-left: 49px
 		padding-right: 20px
 	&__foot
-		padding: 42px 45px 55px
+		padding: 41px 49px 55px
 		border-top: 1px solid #eeeeee
 
 
 .feedback
 	&__title
+		font-size: 14px
 		font-weight: 700
 		line-height: 23px
-		margin-bottom: 4px
+		margin-bottom: 6px
+		// letter-spacing: 0.1px
 	&__text
 		font-size: 13px
 		line-height: 22px
 		opacity: 0.8
+		letter-spacing: 0.2px
 	&__input
-		margin-top: 16px
+		margin-top: 17px
 		margin-bottom: 20px
 	&__btn
 		width: 100%
@@ -902,7 +952,7 @@ sup
 			padding-left: 10px
 			padding-right: 10px
 	&__messengers
-		margin-top: 29px
+		margin-top: 27px
 
 
 .messengers
@@ -943,14 +993,15 @@ sup
 .allinc
 	z-index: 1
 	position: relative
-	padding-top: 105px
+	padding-top: 101px
 	.case
 		padding-bottom: 100px
 	&__subtitle
 		opacity: 0.6
 		// letter-spacing: 0.4px
+		margin-bottom: 3px
 	&__title
-		margin-bottom: 55px
+		margin-bottom: 52px
 	&__list
 		margin-left: -15px
 		margin-right: -15px
@@ -967,8 +1018,8 @@ sup
 		border-radius: 8px
 		background-color: #ffffff
 		overflow: hidden
-		padding-top: 30px
-		padding-bottom: 30px
+		padding-top: 32px
+		padding-bottom: 32px
 	&__name
 		line-height: 23px
 		padding-left: 40px
@@ -986,7 +1037,7 @@ sup
 	&__img
 		z-index: -1
 		position: absolute
-		bottom: 0
+		bottom: -7px
 		right: 50px
 
 
@@ -1022,7 +1073,7 @@ sup
 				opacity: 1
 .calc
 	&__inner
-		padding: 75px 80px 80px 80px
+		padding: 72px 80px 80px 80px
 		width: calc(100% - 290px)
 	&__title
 		font-size: 32px
@@ -1030,11 +1081,15 @@ sup
 		font-weight: 700
 		font-family: $montserrat
 		text-transform: uppercase
+		margin-bottom: 9px
 	&__subtitle
+		margin-bottom: 5px
 		&.--hidden
 			display: none
 	&__desc
-		margin-bottom: 35px
+		font-size: 14px
+		letter-spacing: 0.2px
+		margin-bottom: 37px
 		&.--hidden
 			display: none
 	&__status
@@ -1049,6 +1104,8 @@ sup
 		&.--current
 			height: auto
 			overflow: visible
+			&.c-thanks
+				padding-top: 20px
 	&__radios
 		margin-left: -15px
 		margin-right: -15px
@@ -1081,7 +1138,6 @@ sup
 	
 
 .c-thanks
-	padding-top: 20px
 	&__title
 		margin-bottom: 22px
 	&__form
@@ -1103,19 +1159,22 @@ sup
 		
 .b-gifts
 	&__head
-		padding: 74px 50px 42px 40px
+		padding: 75px 50px 42px 35px
 		border-bottom: 1px solid #eee
 	&__title
 		font-size: 16px
 		line-height: 25px
 		font-family: $montserrat
 		text-transform: uppercase
+		margin-bottom: -1px
 	&__subtitle
+		font-size: 14px
+		letter-spacing: 0.3px
 		opacity: 0.7
 	&__item
 		display: flex
 		align-items: center
-		padding: 10px 0 10px 40px
+		padding: 21px 0 21px 35px
 		border-bottom: 1px solid #eee
 		&:last-of-type
 			border-bottom: none
@@ -1133,14 +1192,14 @@ sup
 	position: relative
 	overflow: hidden
 	.case
-		padding-bottom: 840px
+		padding-bottom: 830px
 	&__subtitle
 		margin-top: 100px
 		text-align: center
-		margin-bottom: -10px
+		margin-bottom: -7px
 	&__title
 		text-align: center
-		margin-bottom: 60px
+		margin-bottom: 55px
 		sup
 			font-size: 0.5em
 	&__list
@@ -1156,17 +1215,25 @@ sup
 		background-color: #fff
 		border-radius: 8px
 		line-height: 23px
-		padding-left: 35px
+		padding-left: 40px
 		padding-right: 10px
 		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.05)
 		&:nth-of-type(1)
 			.oneday
 				&__icon
 					top: 5px
-					margin-right: 20px
+					margin-right: 25px
+		&:nth-of-type(3)
+			.oneday
+				&__icon
+					top: 5px
+					margin-right: 13px
+	&__text
+		margin-right: -10px
 	&__icon
 		position: relative
 		margin-left: auto
+		margin-right: 10px
 	&__img
 		position: absolute
 		bottom: -110px
@@ -1185,7 +1252,7 @@ sup
 	&.--pb
 		padding-bottom: 130px
 	&__content
-		padding-top: 115px
+		padding-top: 110px
 		padding-bottom: 60px
 		max-width: 550px
 	&__subtitle
@@ -1202,7 +1269,7 @@ sup
 		margin: 0 -10px -20px
 	&__item
 		border-radius: 8px
-		padding: 11px 21px
+		padding: 9px 21px
 		margin: 0 10px 20px
 		border: 1px solid rgb(72,78,81,.1)
 
@@ -1210,7 +1277,7 @@ sup
 	&__img
 		z-index: 2
 		position: absolute
-		right: -50px
+		right: -45px
 		top: 64px
 	&__count
 		z-index: 3
@@ -1218,8 +1285,8 @@ sup
 		align-items: center
 		flex-direction: column
 		position: absolute
-		right: 50px
-		top: 120px
+		right: 58px
+		top: 105px
 		width: 100%
 		max-width: 90px
 		text-align: center
@@ -1233,7 +1300,7 @@ sup
 			margin-top: 10px
 			background: url('../imgs/line-2.svg') no-repeat center
 		&-icon
-			margin-bottom: -5px
+			margin-bottom: -13px
 			margin-right: -2px
 		&-value
 			font-size: 14px
@@ -1264,7 +1331,7 @@ sup
 		flex-direction: column
 		align-items: center
 		width: calc(100% / 4)
-		padding: 75px 10px 75px
+		padding: 75px 10px 68px
 		border-right: 1px solid #eee
 		text-align: center
 	&__icon
@@ -1272,14 +1339,15 @@ sup
 		align-items: flex-end
 		height: 114px
 		position: relative
-		margin-bottom: 35px
+		margin-bottom: 32px
 	&__name
 		font-size: 14px
 		font-weight: 500
 		line-height: 24px
 		text-transform: uppercase
 		font-family: $montserrat
-		margin-bottom: 6px
+		margin-bottom: 5px
+		letter-spacing: 0.3px
 	&__text
 		opacity: 0.9
 		font-size: 14px
@@ -1357,9 +1425,9 @@ sup
 		width: 100%
 		max-width: 670px
 		margin-left: auto
-		padding-top: 110px
+		padding-top: 116px
 	&__title
-		margin-bottom: 20px
+		margin-bottom: 30px
 	&__list
 		margin-left: -10px
 		margin-right: -10px
@@ -1383,6 +1451,7 @@ sup
 		top: 5px
 		margin-right: 12px
 	&__text
+		letter-spacing: -0.3px
 		line-height: 23px
 	&__form
 		margin-top: 60px
@@ -1405,7 +1474,7 @@ sup
 
 
 .whatsapp
-	margin-top: 62px
+	margin-top: 60px
 	&__title
 		width: 100%
 		max-width: 375px
@@ -1414,13 +1483,13 @@ sup
 		margin-left: 50px
 	&__content
 		width: 100%
-		max-width: 480px
+		max-width: 475px
 		margin-left: auto
-		padding-top: 50px
+		padding-top: 46px
 	&__subtitle
 		text-transform: uppercase
 		position: relative
-		letter-spacing: 0.36px
+		letter-spacing: 0.29px
 		font-family: $montserrat
 		&:after
 			content: ''
@@ -1441,12 +1510,13 @@ sup
 	&__btn
 		display: inline-flex
 		margin-top: 20px
+		min-width: 270px
 
 
 .de
 	z-index: 2
-	padding-top: 100px
-	padding-bottom: 80px
+	padding-top: 95px
+	padding-bottom: 64px
 	position: relative
 	&:after
 		content: ''
@@ -1471,20 +1541,21 @@ sup
 		z-index: 1
 		position: absolute
 		top: 4px
-		left: 0
+		left: 4px
 		
 	&__content
 		width: 100%
 		max-width: 570px
 		padding-top: 7px
 	&__title
+		margin-bottom: 2px
 		img
 			display: inline-block
 			vertical-align: middle
 			position: relative
 			top: -3px
 	&__subtitle
-		margin-bottom: 49px
+		margin-bottom: 38px
 	&__photos
 		margin-top: 30px
 		margin: 30px -15px -30px
@@ -1525,7 +1596,7 @@ sup
 	align-items: center
 	background-color: #fff
 	border-radius: 8px
-	padding: 37px 80px 37px 42px
+	padding: 34px 70px 34px 42px
 	&__icon
 		width: 76px
 		margin-top: -27px
@@ -1543,19 +1614,20 @@ sup
 		text-transform: uppercase
 		font-family: $montserrat
 		letter-spacing: 0.56px
-		margin-bottom: 5px
+		margin-bottom: 4px
 	&__desc
 		font-size: 14px
 		line-height: 23px
 		opacity: 0.9
+		// letter-spacing: 0.1px
 
 	
 .economy
 	padding-top: 120px
-	min-height: 835px
+	min-height: 855px
 	&__title
 		text-align: center
-		margin-bottom: 12px
+		margin-bottom: 8px
 	&__subtitle
 		text-align: center
 		margin-bottom: 135px
@@ -1566,21 +1638,29 @@ sup
 	&__wrap
 		background: #fff
 		position: relative
+		border-radius: 8px
+		box-shadow: 0 3px 20px rgba(0, 0, 0, 0.04)
 		justify-content: space-between
 	&__item
 		width: 360px
-		padding-bottom: 45px
+		padding-bottom: 38px
+		&:nth-of-type(1)
+			.economy
+				&__icon
+					margin-left: 20px
 	&__img
 		z-index: 7
 		position: absolute
 		top: 50%
 		left: 50%
+		margin-top: 18px
 		transform: translate(-50%, -50%)
 	&__icon
 		display: flex
 		align-items: flex-end
 		justify-content: center
 		height: 114px
+		// margin-left: 5px
 		margin-top: -70px
 		margin-bottom: 25px
 	&__text
@@ -1636,16 +1716,16 @@ sup
 		flex-direction: column
 	&__wrap
 		align-items: flex-end
-		min-height: 850px
+		min-height: 845px
 	&__img-wrap
 		position: relative
 		width: calc(100% - 570px)
-		max-height: 790px
+		max-height: 785px
 		overflow: hidden
 	&__person
 		position: absolute
-		top: 118px
-		left: 0
+		top: 120px
+		left: 5px
 		&:before
 			content: ''
 			top: 15px
@@ -1655,7 +1735,7 @@ sup
 			height: 100px
 			background: url('../imgs/line-1.svg')
 	&__img
-		margin-left: 71px
+		margin-left: 61px
 	&__content
 		width: 100%
 		max-width: 570px
@@ -1665,7 +1745,7 @@ sup
 		font-size: 16px
 		font-family: $montserrat
 		text-transform: uppercase
-		margin-top: 14px
+		margin-top: 16px
 	&__report
 		margin-top: 25px
 	&__quote
@@ -1689,6 +1769,7 @@ sup
 
 		&-icon
 			position: relative
+			min-width: 50px
 			width: 50px
 			height: 50px
 			font-size: 0
@@ -1727,13 +1808,13 @@ sup
 	
 
 .objects
-	padding-top: 112px
+	padding-top: 110px
 	padding-bottom: 122px
 	&__title
 		margin-left: auto
 		margin-right: auto
 		text-align: center
-		margin-bottom: 16px
+		margin-bottom: 15px
 	&__subtitle
 		text-align: center
 		margin-bottom: 65px
@@ -1743,7 +1824,7 @@ sup
 .object
 	display: flex
 	flex-wrap: wrap
-	padding: 40px
+	padding: 30px 45px 35px 45px
 	box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
 	border-radius: 8px
 	background-color: #ffffff
@@ -1773,7 +1854,7 @@ sup
 		width: 530px
 
 	&__btns
-		margin-top: 40px
+		margin-top: 38px
 		align-items: center
 	&__more
 		margin-left: 30px
@@ -1795,6 +1876,7 @@ sup
 		&-item
 			height: 425px
 			overflow: hidden
+			border-radius: 8px
 			img
 				width: 100%
 				height: 100%
@@ -1888,10 +1970,11 @@ sup
 			fill: $black
 			opacity: 0.4
 	&__text
-		font-size: 13px
+		font-size: 14px
 		font-weight: 700
 		text-transform: uppercase
 		border-bottom: 1px dotted $black
+		letter-spacing: 0.1px
 		transition: .3s
 
 .arrow
@@ -1909,8 +1992,8 @@ sup
 	transform: translateY(-50%)
 	box-shadow: 0 3px 60px rgba(0, 0, 0, 0.05)
 	svg
-		width: 20px
-		height: 20px
+		width: 18px
+		height: 18px
 		transition: .3s
 		opacity: 0.35
 	&.--prev
@@ -1929,7 +2012,9 @@ sup
 
 .estimate
 	background-color: #f4f4f4
-	padding-top: 90px
+	padding-top: 88px
+	&__subtitle
+		margin-bottom: 7px
 	&__title
 		i
 			font-size: 16px
@@ -1937,14 +2022,16 @@ sup
 			max-width: 190px
 			display: inline-block
 			vertical-align: middle
+			margin-left: 7px
+			letter-spacing: 0.2px
 	&__img
 		position: absolute
 		top: -157px
-		right: 73px
+		right: 77px
 
 	&__imgs
 		position: relative
-		margin-top: 70px
+		margin-top: 65px
 		&-item
 			height: 535px
 			border-radius: 8px
@@ -1952,13 +2039,13 @@ sup
 		&-address
 			z-index: 3
 			position: absolute
-			bottom: 65px
-			left: 69px
+			bottom: 69px
+			left: 70px
 			right: 600px
 			display: flex
 			align-items: center
 			svg
-				width: 11px
+				width: 12px
 				min-width: 11px
 			path
 				fill: #4caf50
@@ -1968,6 +2055,7 @@ sup
 				font-family: $montserrat
 				text-transform: uppercase
 				margin-left: 11px
+				letter-spacing: 0.35px
 		&-img
 			height: 100%
 			img
@@ -1998,11 +2086,11 @@ sup
 
 
 .gifts
-	padding-top: 103px
+	padding-top: 100px
 	background-color: #f4f4f4
 	&__title
 		text-align: center
-		margin-bottom: 32px
+		margin-bottom: 38px
 	&__list
 		margin-left: -5px
 		margin-right: -5px
@@ -2028,7 +2116,7 @@ sup
 			object-position: center bottom
 
 .gift-why
-	padding-top: 36px
+	padding-top: 30px
 	&__img-wrap
 		position: relative
 		width: calc(100% - 580px)
@@ -2054,6 +2142,7 @@ sup
 	&__btn
 		margin-top: 50px
 		display: inline-flex
+		min-width: 265px
 
 .bi
 	&__icon
@@ -2077,18 +2166,22 @@ sup
 	z-index: 2
 	position: relative
 	padding-top: 100px
-	padding-bottom: 120px
+	padding-bottom: 115px
 	&__wrap
 		z-index: 3
 		position: relative
 		width: 100%
 		max-width: 712px
 	&__title
-		margin-bottom: 10px
+		margin-bottom: 16px
+	&__discount
+		.bi
+			&__text
+				font-weight: 600
 	&__text
 		max-width: 470px
 		margin-top: 20px
-		margin-bottom: 50px
+		margin-bottom: 45px
 	&__form
 		padding-top: 45px
 		padding-bottom: 50px
@@ -2100,19 +2193,19 @@ sup
 	&__phone
 		z-index: 2
 		position: absolute
-		top: 27px
+		top: 21px
 		right: 64px
 	&__paper
 		z-index: 1
 		position: absolute
-		top: -58px
-		right: -626px
+		top: -59px
+		right: -606px
 		
 
 .reviews
 	z-index: 1
 	padding-top: 100px
-	padding-bottom: 115px
+	padding-bottom: 100px
 	position: relative
 	&:before, &:after
 		content: ''
@@ -2142,11 +2235,13 @@ sup
 		margin-bottom: 10px
 	&__subtitle
 		text-align: center
-		margin-bottom: 10px
+		margin-bottom: 14px
 	&__desc
+		font-size: 17px
+		letter-spacing: 0.1px
 		text-align: center
 	&__wrap
-		margin-top: 50px
+		margin-top: 48px
 		margin-left: 90px
 		margin-right: 90px
 	&__list
@@ -2168,7 +2263,7 @@ sup
 
 	&__more
 		display: flex
-		margin-top: 55px
+		margin-top: 50px
 		&-btn
 			&.btn
 				font-size: 13px
@@ -2299,7 +2394,7 @@ sup
 
 
 .reputation
-	padding-top: 30px
+	// padding-top: 30px
 	&:before, &:after
 		content: ''
 		position: absolute
@@ -2316,13 +2411,14 @@ sup
 		background-color: #f4f4f4
 	&__img-wrap
 		width: 561px
-		max-height: 785px
+		max-height: 775px
 		overflow: hidden
 		position: relative
+		margin-left: -17px
 	&__person
 		position: absolute
 		top: 50px
-		left: 0
+		left: 17px
 		&:before
 			content: ''
 			top: 100%
@@ -2335,11 +2431,22 @@ sup
 	&__content
 		width: 100%
 		max-width: 670px
-		margin-left: -65px
+		margin-left: -45px
+		padding-top: 30px	
 	&__quote
-		margin-top: 20px
-		margin-bottom: 45px
+		margin-top: 22px
+		margin-bottom: 42px
 		align-items: center
+		&.--sm
+			.bi
+				&__icon
+					width: 50px
+					height: 50px
+					img
+						width: 76px
+						height: 76px
+				&__text
+					padding-left: 27px
 	&__btn
 		display: inline-flex
 		&.btn
@@ -2347,12 +2454,14 @@ sup
 	&__desc
 		position: relative
 		width: 100%
-		max-width: 230px
+		max-width: 235px
 		opacity: 0.8
 		font-size: 14px
 		line-height: 27px
 		margin-left: auto
-		margin-top: 24px
+		margin-top: 17px
+		margin-right: 5px
+		letter-spacing: 0.1px
 		&:before
 			content: ''
 			position: absolute
@@ -2361,13 +2470,18 @@ sup
 			width: 78px
 			height: 68px
 			background: url('../imgs/line-6.svg') no-repeat center
+	&__btn
+		&.btn
+			padding-left: 34px
+			padding-right: 34px
+		
 	&__bg
 		img
 			object-position: center bottom
 
 
 .express
-	padding-top: 103px
+	padding-top: 101px
 	padding-bottom: 120px
 	&__content
 		z-index: 1
@@ -2375,13 +2489,17 @@ sup
 		max-width: 910px
 		position: relative
 	&__title
-		margin-bottom: 13px
+		margin-bottom: 14px
 	&__subtitle
-		margin-bottom: 13px
+		margin-bottom: 18px
 	&__desc
+		font-size: 16px
+		font-weight: 700
 		margin-bottom: 15px
+		letter-spacing: 0.3px
 	&__list
-		max-width: 680px
+		max-width: 620px
+		padding-left: 9px
 	&__item
 		display: flex
 		align-items: center
@@ -2393,6 +2511,8 @@ sup
 					&-text
 						margin-left: 27px
 		&:nth-of-type(2)
+			width: calc(50% + 50px)
+			margin-right: -50px
 			.express
 				&__item
 					&-icon
@@ -2402,7 +2522,7 @@ sup
 		&-text
 			margin-left: 10px
 	&__form
-		margin-top: 40px
+		margin-top: 42px
 		position: relative
 		padding: 0
 		.form
@@ -2420,35 +2540,53 @@ sup
 				bottom: 0
 				left: 40px
 				position: absolute
+				overflow: hidden
+				img
+					position: relative
+					top: 37px
 			&__inner
-				padding: 50px 60px 45px 280px
+				padding: 42px 60px 45px 280px
+			&__title
+				margin-bottom: 5px
+			&__subtitle
+				letter-spacing: -0.3px
 			&__btn
 				&.btn
 					padding-left: 10px
 					padding-right: 10px
 	&__img
 		position: absolute
-		top: -65px
-		right: -80px
+		top: -35px
+		right: -66px
 	&__round
 		position: absolute
-		top: 15px
-		right: 15px
+		top: -15px
+		right: 5px
+		.round
+			&__text
+				text-transform: uppercase
 
 
 .start
-	padding-top: 110px
+	padding-top: 105px
 	padding-bottom: 115px
 	background-color: #f4f4f4
 	&__content
 		width: 100%
-		max-width: 575px
+		max-width: 555px
 		margin-left: auto
 	&__desc
-		margin-bottom: 5px
+		margin-bottom: 10px
 	&__subtitle
-		margin-top: 10px
+		margin-top: 13px
 		align-items: center
+		.bi
+			&__icon
+				width: 50px
+				height: 50px
+				img
+					width: 76px
+					height: 76px
 	&__form
 		margin-top: 45px
 		.form
@@ -2459,11 +2597,11 @@ sup
 
 	&__ruler
 		position: absolute
-		left: -105px
-		top: 95px
+		left: -112px
+		top: 92px
 	&__scheme
-		top: -105px
-		left: -470px
+		top: -113px
+		left: -456px
 		position: absolute
 
 
@@ -2475,10 +2613,10 @@ sup
 		text-align: center
 		margin-left: auto
 		margin-right: auto
-		margin-bottom: 10px
+		margin-bottom: 15px
 	&__subtitle
 		text-align: center
-		margin-bottom: 65px
+		margin-bottom: 60px
 	&__list
 		margin-left: -15px
 		margin-right: -15px
@@ -2502,10 +2640,11 @@ sup
 		font-family: $montserrat
 		text-transform: uppercase
 		letter-spacing: 0.32px
-		margin-bottom: 10px
+		margin-bottom: 6px
 	&__size
-		font-size: 14px
+		font-size: 16px
 		opacity: 0.6
+		font-weight: 600
 		margin-bottom: 25px
 		text-transform: uppercase
 	&__img
@@ -2514,11 +2653,12 @@ sup
 		justify-content: center
 		height: 240px
 	&__price
-		margin-top: 31px
+		margin-top: 25px
 		margin-bottom: 26px
 		&-title
 			font-size: 14px
 			opacity: 0.85
+			font-weight: 600
 			margin-bottom: 7px
 		&-item
 			position: relative
@@ -2538,23 +2678,39 @@ sup
 					right: 0
 					height: 1px
 					background-color: #ff4200
+	&__btn
+		width: 100%
+		max-width: 270px
+		margin-left: auto
+		margin-right: auto
+		&.btn
+			padding-left: 10px
+			padding-right: 10px
 
 
 .remotely
 	padding-top: 100px
-	padding-bottom: 110px
+	padding-bottom: 100px
 	overflow: hidden
 	&__content
 		// padding-top: 50px
+	&__title
+		margin-bottom: 6px
+	&__subtitle
+		font-weight: 600
 	&__desc
 		align-items: center
 		margin-top: 5px
 		margin-top: 10px
-		margin-bottom: 30px
+		margin-bottom: 23px
+		.bi
+			&__text
+				// font-weight: 600
+				padding-bottom: 6px
 	&__item
 		display: flex
 		align-items: center
-		margin-bottom: 35px
+		margin-bottom: 34px
 		&:last-of-type
 			margin-bottom: 0
 		&-icon
@@ -2577,12 +2733,12 @@ sup
 				background-color: #f4f4f4
 		&-text
 			width: calc(100% - 64px)
-			padding-left: 31px
+			padding-left: 34px
 			line-height: 23px
 	&__img
 		position: absolute
-		bottom: -136px
-		left: 385px
+		bottom: -131px
+		left: 379px
 		transform: scale(-1, 1)
 		&:before
 			z-index: -1
@@ -2658,12 +2814,12 @@ sup
 		text-align: center
 		margin-left: auto
 		margin-right: auto
-		margin-bottom: 60px
+		margin-bottom: 62px
 	&__item
 		position: relative
 		display: flex
 		align-items: center
-		height: 170px
+		height: 181px
 		border-top: 1px solid #e2e3e3
 		&:last-of-type
 			border-bottom: 1px solid #e2e3e3
@@ -2677,6 +2833,7 @@ sup
 		line-height: 27px
 		margin-left: 60px
 		max-width: 450px
+		padding-bottom: 3px
 		img
 			width: 12px
 			display: inline-block
@@ -2687,6 +2844,7 @@ sup
 			&.--xs
 				font-size: 15px
 				opacity: 0.85
+				margin-top: 9px
 				a
 					font-weight: 700
 
@@ -2710,15 +2868,17 @@ sup
 	&__count
 		opacity: 0.4
 		font-size: 14px
+		font-weight: 700
 		font-family: $montserrat
 		position: absolute
 		top: 50%
 		right: 60px
 		text-align: right
+		letter-spacing: 0.5px
 		transform: translateY(-50%)
 
 .cheap
-	padding-top: 82px
+	padding-top: 78px
 	&__img-wrap
 		width: 675px
 		max-height: 910px
@@ -2726,23 +2886,23 @@ sup
 		// overflow: hidden
 	&__person
 		position: absolute
-		top: 85px
-		left: 15px
+		top: 88px
+		left: 3px
 	&__img
 		width: 561px
 		max-height: 910px
 		overflow: hidden
 		transform: scale(-1,1)
-		margin-left: -90px
+		margin-left: -85px
 	&__content
 		width: 100%
-		max-width: 665px
+		max-width: 670px
 		padding-top: 22px
-		margin-left: -170px
+		margin-left: -175px
 	&__title
-		margin-bottom: 9px
+		margin-bottom: 14px
 	&__subtitle
-		margin-bottom: 13px
+		margin-bottom: 21px
 
 	&__form
 		margin-top: 55px
@@ -2752,6 +2912,8 @@ sup
 		padding-left: 400px
 		padding-right: 100px
 		.form
+			&__title
+				line-height: 24px
 			&__btn
 				&.btn
 					padding-left: 10px
@@ -2763,6 +2925,7 @@ sup
 
 .c-why
 	&__title
+		font-weight: 600
 		margin-bottom: 10px
 	&__item
 		display: flex
@@ -2809,19 +2972,25 @@ sup
 		text-align: center
 		margin-left: auto
 		margin-right: auto
+		margin-bottom: 5px
 		img
 			display: inline-block
 			vertical-align: middle
 			position: relative
 			top: -4px
 			width: 47px
+			margin-left: 9px
+			margin-right: 9px
 	&__subtitle
 		text-align: center
-		margin-bottom: 12px
+		margin-bottom: 21px
 	&__desc
+		font-size: 17px
+		font-weight: 600
 		opacity: 0.85
+		letter-spacing: -0.2px
 		text-align: center
-		margin-bottom: 65px
+		margin-bottom: 62px
 	&__list
 		margin-left: -15px
 		margin-right: -15px
@@ -2895,19 +3064,21 @@ sup
 		width: 100%
 		max-width: 712px
 	&__title
-		margin-bottom: 17px
+		margin-bottom: 26px
 	&__list
 		margin: 0 -10px -20px
 	&__item
 		font-size: 18px
-		padding: 10px 30px
+		padding: 16px 28px
 		border-radius: 8px
 		margin-left: 10px
 		margin-right: 10px
 		margin-bottom: 20px
+		font-weight: 600
 		border: 1px solid rgb(72,78,81,.1)
 		u
 			color: #787b7d
+			font-weight: 400
 	&__form
 		margin-top: 70px
 		padding-top: 45px
@@ -2928,20 +3099,23 @@ sup
 
 	&__img
 		position: absolute
-		right: 170px
+		right: 201px
 		top: -65px
 
 	&__round
 		position: absolute
-		top: 10px
-		right: 0
+		top: 8px
+		right: 5px
+		.round
+			&__img
+				margin-bottom: 6px
 
 .pay
 	z-index: 2
 	position: relative
-	margin-top: -260px
+	margin-top: -252px
 	&__wrap
-		padding: 63px 80px 55px 45px
+		padding: 63px 80px 50px 45px
 		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
 		border-radius: 8px
 		background-color: #ffffff
@@ -2975,7 +3149,8 @@ sup
 		font-weight: 700
 		margin-top: 15px
 		font-family: $montserrat
-		margin-bottom: 15px
+		margin-bottom: 12px
+		text-transform: uppercase
 	&__text
 		color: #787b7d
 		margin-bottom: 30px
@@ -2984,9 +3159,9 @@ sup
 
 
 .cooperate
-	margin-top: -225px
+	margin-top: -239px
 	padding-top: 340px
-	padding-bottom: 120px
+	padding-bottom: 117px
 	background-color: #f4f4f4
 	overflow: hidden
 	&.--page
@@ -3009,11 +3184,12 @@ sup
 		width: 100%
 		max-width: 295px
 		margin-right: auto
+		padding-top: 25px
 	&__text
 		font-size: 18px
 		line-height: 30px
 	&__btn
-		margin-top: 30px
+		margin-top: 28px
 		&.btn
 			padding-left: 10px
 			padding-right: 10px
@@ -3046,12 +3222,12 @@ sup
 
 	&__desc
 		position: absolute
-		top: -27px
-		right: -160px
+		top: -24px
+		right: -155px
 		width: 100%
 		font-size: 13px
 		line-height: 20px
-		font-weight: 300
+		font-weight: 500
 		font-family: $montserrat
 		max-width: 130px
 		transform: translateY(-100%)
@@ -3068,17 +3244,26 @@ sup
 .instructions
 	position: relative
 	padding-top: 103px
-	padding-bottom: 280px
+	padding-bottom: 268px
 	overflow: hidden
+	&__title
+		margin-bottom: 3px
 	&__subtitle
 		margin-bottom: 20px
 	&__text
 		h3
 			font-size: 18px
+			margin-bottom: 15px
+		ul
+			padding-left: 5px
+			margin-bottom: -6px
+		li
+			margin-bottom: 6px
 	&__send
 		width: 100%
 		max-width: 570px
 		margin-left: auto
+		margin-top: 13px
 	&__book-wrap
 		position: absolute
 		bottom: -595px
@@ -3121,13 +3306,14 @@ sup
 		u
 			width: 22px
 			margin-left: auto
+			margin-right: -12px
 			svg
 				margin-left: auto
 				margin-right: auto
 	&__img
 		position: absolute
 		bottom: 0
-		right: 18px
+		right: 21px
 		width: 226px
 		overflow: hidden
 		transform: scale(-1, 1)
@@ -3136,14 +3322,14 @@ sup
 		
 
 .save
-	padding-top: 100px
+	padding-top: 102px
 	padding-bottom: 115px
 	background-color: #f4f4f4
 	overflow: hidden
 	&__img-wrap
 		position: absolute
-		top: -20px
-		left: -360px
+		top: 1px
+		left: -358px
 	&__content
 		width: 100%
 		max-width: 570px
@@ -3151,7 +3337,13 @@ sup
 	&__title
 		margin-bottom: 16px
 	&__subtitle
-		margin-bottom: 13px
+		margin-bottom: 16px
+		.bi
+			&__icon
+				transform: scale(1.2)
+			&__text
+				padding-left: 25px
+				
 
 .copy
 	&__title
@@ -3165,16 +3357,18 @@ sup
 		line-height: 24px
 		width: calc(100% - 34px)
 		padding-left: 20px
+		position: relative
+		top: 2px
 
 .office
 	z-index: 2
 	position: relative
-	padding-top: 103px
+	padding-top: 101px
 	&__title
 		text-align: center
 		margin-left: auto
 		margin-right: auto
-		margin-bottom: 65px
+		margin-bottom: 56px
 	&__wrap
 		position: relative
 		margin-left: 100px
@@ -3182,9 +3376,10 @@ sup
 	&__slider
 		overflow: visible
 	&__item
-		height: 500px
+		height: 495px
 		border-radius: 8px
 		overflow: hidden
+		font-size: 0
 		img
 			width: 100%
 			height: 100%
@@ -3207,7 +3402,7 @@ sup
 		right: 0
 		bottom: 0
 	&.--mt
-		margin-top: -75px
+		margin-top: -50px
 		
 		
 
@@ -3224,12 +3419,13 @@ sup
 				transform: translateY(-50%)
 				
 	&__wrap
-		padding: 60px 70px 62px 70px
+		align-items: flex-start
+		padding: 50px 70px 62px 70px
 		border-radius: 8px
 		box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
 		background-color: #fff
 	&__data
-		width: 530px
+		width: 600px
 		&-col
 			width: 50%
 
@@ -3246,12 +3442,17 @@ sup
 	&__feedback
 		margin-left: auto
 		width: 100%
-		max-width: 225px
+		max-width: 255px
+		padding-top: 7px
 	&__title
-		font-size: 16px
+		font-size: 20px
 		letter-spacing: 0.32px
 		text-transform: uppercase
 		margin-bottom: 17px
+		font-family: $montserrat
+		&.--sm
+			font-size: 16px
+			
 	&__time
 		margin-top: 5px
 	&__consult
@@ -3263,10 +3464,10 @@ sup
 			padding-right: 10px
 
 	&__contact
-		margin-bottom: 25px
+		margin-bottom: 20px
 		&:last-of-type
 			margin-bottom: 0
-
+       
 	&__req
 		width: 100%
 		max-width: 125px
@@ -3307,16 +3508,16 @@ sup
 
 
 .order
-	padding-top: 190px
+	padding-top: 182px
 	overflow: hidden
 	&__img-wrap
 		width: 468px
 		position: relative
-		margin-bottom: -75px
+		margin-bottom: -80px
 	&__person
 		position: absolute
 		top: 55px
-		left: 0
+		left: 5px
 		&:before
 			content: ''
 			top: 100%
@@ -3330,12 +3531,12 @@ sup
 		margin-left: 18px
 	&__content
 		width: 100%
-		max-width: 580px
+		max-width: 570px
 		padding-top: 45px
 		margin-left: auto
 		margin-right: 100px
 	&__title
-		margin-bottom: 8px
+		margin-bottom: 5px
 	&__subtitle
 		margin-bottom: 17px
 	&__text
@@ -3352,7 +3553,7 @@ sup
 	&__call
 		margin-top: 45px
 		border-radius: 0
-		padding-top: 45px
+		padding-top: 40px
 		padding-bottom: 45px
 		border-top: 1px solid rgba(72,78,81,.1)
 		border-bottom: 1px solid rgba(72,78,81,.1)
@@ -3371,7 +3572,7 @@ sup
 				width: 100%
 				margin-top: 8px
 			&__icon
-				top: -60px
+				top: -65px
 				
 	&__bg
 		img
@@ -4275,12 +4476,22 @@ sup
 	&__company
 		max-width: 200px
 		margin-right: 95px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			top: -50px
+			bottom: -46px
+			right: -42px
+			width: 1px
+			background-color: #ececec
 	&__address
 		width: 100%
 		max-width: 175px
 	&__logo
 		display: inline-block
 		margin-bottom: 5px
+
 		
 	&__desc
 		opacity: 0.5

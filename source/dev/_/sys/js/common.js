@@ -191,6 +191,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
 				navigation: {
 					prevEl: $arrowPrev,
 					nextEl: $arrowNext
+				},
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					992: {
+						slidesPerView: 2,
+					},
 				}
 			})
 
