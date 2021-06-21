@@ -2536,9 +2536,12 @@
     bottom: -120px;
   }
 
+  .fix.--pb {
+    padding-bottom: 80px;
+  }
   .fix__content {
     padding-top: 160px;
-    padding-bottom: 325px;
+    padding-bottom: 345px;
   }
   .fix__subtitle {
     font-size: 16px;
@@ -2552,13 +2555,14 @@
   .fix__count {
     top: 636px;
     right: 50%;
-    margin-right: 90px;
+    margin-right: 110px;
     transform: translateX(50%);
   }
   .fix__count:after {
     display: none;
   }
   .fix__img {
+    z-index: 2;
     top: 636px;
     right: 50%;
     margin-right: -120px;
@@ -2736,7 +2740,7 @@
   }
   .de__photo {
     width: calc(100% / 2 - 16px);
-    height: 152px;
+    height: 96px;
     margin-left: 8px;
     margin-right: 8px;
   }
@@ -4004,21 +4008,19 @@
     padding-bottom: 40px;
   }
 
-  .contacts-p {
-    padding-bottom: 30px;
+  .contacts__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
   }
-
-  .contacts.--p-abs .contacts__inner {
-    box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08);
+  .contacts__title.--sm {
+    text-align: center;
   }
-  .contacts.--p-abs .contacts__wrap {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    transform: none;
-    border-radius: 0px;
-    box-shadow: none;
+  .contacts__wrap {
+    padding: 50px 15px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .contacts__data {
     flex-direction: column;
@@ -4044,7 +4046,7 @@
     max-width: 110px;
     margin-top: 0;
     position: absolute;
-    right: 48px;
+    right: 25px;
   }
   .contacts__req {
     margin-top: 0;
@@ -4053,15 +4055,10 @@
   .contacts__parking {
     margin-top: 30px;
   }
-
-  .parking {
-    width: 100%;
-  }
-  .parking__text {
-    max-width: 240px;
-  }
-  .parking__text br {
-    display: none;
+  .contacts__feedback {
+    padding-top: 0;
+    margin-top: 30px;
+    max-width: 100%;
   }
 
   .map {
@@ -4164,6 +4161,9 @@
   .about {
     padding-bottom: 240px;
   }
+  .about__bg .bg-wrap .bg {
+    top: 1030px;
+  }
   .about__title {
     max-width: 200px;
     text-align: center;
@@ -4182,5 +4182,88 @@
   .about__img {
     width: 370px;
     bottom: 0;
+  }
+
+  .team__title {
+    margin-bottom: 35px;
+  }
+  .team__title br {
+    display: none;
+  }
+
+  .order {
+    padding-top: 260px;
+  }
+  .order__bg {
+    display: none;
+  }
+  .order__wrap {
+    flex-direction: column;
+  }
+  .order__img-wrap {
+    z-index: -1;
+    right: 15px;
+    top: 160px;
+    order: 2;
+    width: 225px;
+    position: absolute;
+  }
+  .order__img {
+    margin-left: 0;
+  }
+  .order__person {
+    left: -100px;
+  }
+  .order__content {
+    order: 1;
+  }
+  .order__title, .order__subtitle {
+    text-align: center;
+  }
+  .order__title {
+    margin-bottom: 10px;
+  }
+  .order__inner {
+    background: #fff;
+    box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    max-width: 350px;
+    width: 100%;
+    margin-top: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 15px;
+  }
+  .order__text h3 {
+    text-align: center;
+  }
+  .order__form .form__inner {
+    padding: 0 15px !important;
+  }
+  .order__form .form__input.--bg-white .input__area {
+    background-color: #f4f4f4;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  .order__form .form__policy {
+    padding: 0 15px;
+  }
+  .order__call {
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    margin-top: 0;
+    padding-top: 50px;
+  }
+
+  .person__name, .person__position {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .person__name {
+    margin-bottom: 3px;
+  }
+
+  .call__wrap {
+    padding-left: 30px;
   }
 }
