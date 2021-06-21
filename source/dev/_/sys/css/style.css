@@ -3052,6 +3052,20 @@ sup {
   width: 580px;
   padding-top: 100px;
 }
+.gift-why__quote {
+  position: relative;
+}
+.gift-why__quote:before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 21px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
 .gift-why__btn {
   margin-top: 50px;
   display: inline-flex;
@@ -3751,6 +3765,9 @@ sup {
 .remotely__form {
   padding: 50px 60px 38px;
 }
+.remotely__form.--row .form__img {
+  display: none;
+}
 .remotely__form.--row .form__title {
   line-height: 26px;
   text-align: left;
@@ -3882,6 +3899,9 @@ sup {
   text-align: right;
   letter-spacing: 0.5px;
   transform: translateY(-50%);
+}
+.steps__btn-mobile {
+  display: none;
 }
 
 .cheap {
@@ -4059,6 +4079,11 @@ sup {
   transform: translate(-50%, -50%);
   background: url("../imgs/youtube-icon.png") no-repeat center, #fff;
   border-radius: 15px;
+}
+.youtube__wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .youtube__data {
   display: flex;

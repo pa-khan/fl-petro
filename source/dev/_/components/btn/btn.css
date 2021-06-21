@@ -1,0 +1,106 @@
+.btn {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  transition: 0.3s;
+  outline: none;
+  border-bottom: none;
+}
+.btn.--sm {
+  font-size: 14px;
+  font-weight: 600;
+  height: 60px;
+  border-radius: 5px;
+  padding: 5px 35px;
+}
+.btn.--md {
+  font-size: 13px;
+  font-weight: 700;
+  height: 68px;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+  padding: 5px 42px;
+}
+.btn.--b-gray {
+  border: 1px solid rgba(72, 78, 81, 0.2);
+}
+.btn.--b-gray:hover {
+  border-color: #e2e2e2;
+  background-color: #e2e2e2;
+}
+.btn.--bg-white {
+  background-color: #fff;
+}
+.btn.--bg-white:hover {
+  color: #2a88d1;
+}
+.btn.--bg-blue {
+  color: #fff;
+  background-color: #2a88d1;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35);
+}
+.btn.--bg-blue path {
+  fill: #ffffff;
+}
+.btn.--bg-blue:hover {
+  background-color: #009cff;
+  box-shadow: 0 1px 50px rgba(0, 156, 255, 0.4), inset 5px 5px 20px rgba(255, 255, 255, 0.55);
+}
+.btn.--bg-gray {
+  background-color: #f4f4f4;
+}
+.btn.--bg-gray:hover {
+  color: #2a88d1;
+}
+.btn.--bg-green {
+  color: #fff;
+  background-color: #4caf50;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35);
+}
+.btn.--bg-green:hover {
+  background-color: #00d552;
+  box-shadow: 0 1px 50px rgba(0, 213, 82, 0.2), inset 5px 5px 20px rgba(255, 255, 255, 0.55);
+}
+.btn.--whatsapp {
+  color: #fff;
+  background-color: #4daf51;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35);
+}
+.btn.--whatsapp:hover {
+  background-color: #6fc073;
+}
+.btn.--viber {
+  color: #fff;
+  background-color: #6f3faa;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35);
+}
+.btn.--viber:hover {
+  background-color: #895ac2;
+}
+.btn.--telegram {
+  color: #fff;
+  background-color: #039be5;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35);
+}
+.btn.--telegram:hover {
+  background-color: #1fb4fc;
+}
+.btn.--disabled {
+  cursor: default !important;
+  color: rgba(72, 78, 81, 0.6) !important;
+  background-color: #f4f4f4 !important;
+  box-shadow: inset 5px 5px 20px rgba(255, 255, 255, 0.35) !important;
+}
+.btn.--disabled path {
+  fill: #000;
+  opacity: 0.35;
+}

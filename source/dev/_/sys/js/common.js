@@ -120,6 +120,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		spaceBetween: 15
 	}, '.objects__slider', '.objects__list', '.objects__item');
 
+	new MobileSlider({
+		slidesPerView: 1,
+		spaceBetween: 15
+	}, '.examples__slider', '.examples__list', '.examples__item');
+
+	new MobileSlider({
+		slidesPerView: 'auto',
+		spaceBetween: 15
+	}, '.youtube__slider', '.youtube__list', '.youtube__item');
+
 
 
 
@@ -270,10 +280,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
 				},
 				breakpoints: {
 					0: {
+						loop: false,
 						slidesPerView: 1,
+						adaptiveHeight: true
+					},
+					768: {
+						loop: true
 					},
 					992: {
 						slidesPerView: 2,
+						adaptiveHeight: false
 					},
 				}
 			})
@@ -294,7 +310,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			navigation: {
 				prevEl: $arrowPrev,
 				nextEl: $arrowNext
-			}
+			},
+			breakpoints: {
+				320: {
+					spaceBetween: 15,
+				},
+				768: {
+					spaceBetween: 172,
+				}
+			} 
 		})
 	}
 
