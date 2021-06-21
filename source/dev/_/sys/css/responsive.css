@@ -895,6 +895,13 @@
   .footer__bot {
     padding-bottom: 35px;
   }
+
+  .thanks__content {
+    max-width: 500px;
+  }
+  .thanks__img {
+    right: 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .case {
@@ -1873,6 +1880,22 @@
   }
   .footer__copy br {
     display: none;
+  }
+
+  .thanks__content {
+    max-width: 450px;
+  }
+  .thanks__img {
+    width: 350px;
+    right: -10px;
+    bottom: -350px;
+  }
+
+  .call__wrap {
+    padding-left: 0;
+  }
+  .call__icon {
+    right: -40px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -4074,6 +4097,17 @@
     padding-bottom: 40px;
   }
 
+  .contacts-p {
+    padding-bottom: 40px;
+  }
+
+  .contacts.--page .contacts__wrap {
+    position: relative;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+    transform: none;
+  }
   .contacts__title {
     text-align: center;
     font-size: 24px;
@@ -4127,8 +4161,36 @@
     max-width: 100%;
   }
 
+  .contact__value {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact__value p {
+    width: 50%;
+  }
+  .contact__value p:nth-of-type(1) {
+    width: 100%;
+    order: 1;
+  }
+  .contact__value p:nth-of-type(2) {
+    order: 2;
+  }
+  .contact__value p:nth-of-type(3) {
+    order: 3;
+  }
+
   .map {
     height: 360px;
+  }
+
+  .parking {
+    width: 100%;
+  }
+  .parking__text {
+    max-width: 240px;
+  }
+  .parking__text br {
+    display: none;
   }
 
   .questions.--pt {
@@ -4433,5 +4495,36 @@
   }
   .j-form__policy {
     text-align: center;
+  }
+
+  .thanks {
+    padding-bottom: 0;
+  }
+  .thanks__content {
+    max-width: 100%;
+  }
+  .thanks__img-wrap {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -20px;
+  }
+  .thanks__img {
+    position: relative;
+    right: 0;
+    bottom: 20px;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .thanks__person {
+    display: none;
+  }
+  .thanks__call .call__wrap {
+    padding-left: 0;
+  }
+
+  .call__icon {
+    display: none;
   }
 }
