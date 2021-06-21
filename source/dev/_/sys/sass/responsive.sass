@@ -3359,28 +3359,6 @@
 			margin-top: 30px
 			max-width: 100%
 
-	// .contacts
-	// 	&.--p-abs
-	// 		.contacts
-	// 			&__inner
-	// 				box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
-	// 			&__wrap
-	// 				position: relative
-	// 				top: 0
-	// 				left: 0
-	// 				right: 0
-	// 				transform: none
-	// 				border-radius: 0px
-	// 				box-shadow: none
-	// 	
-
-	// .parking
-	// 	width: 100%
-	// 	&__text
-	// 		max-width: 240px
-	// 		br
-	// 			display: none
-
 	.map
 		height: 360px
 
@@ -3417,6 +3395,26 @@
 		&__name, &__foot
 			padding-left: 20px
 			padding-right: 20px
+		&__name
+			margin-bottom: 20px
+
+		&__data
+			width: 100%
+			padding-right: 0
+			margin-bottom: 30px
+			.data
+				&__item
+					width: 100% !important
+					margin-bottom: 10px
+		&__link
+			max-width: 100%
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+		&__text
+			display: flex
 
 	.work
 		&__content
@@ -3438,15 +3436,26 @@
 			&.--prev
 				left: 20px
 
+	.w-gifts
+		max-width: 450px
+		&__item
+			padding: 30px
+		&__name
+			margin-bottom: 0px
+		&__text
+			max-width: 260px
+
 	.arrow
 		width: 56px
 		height: 56px
+		svg
+			width: 12px
 
 	.data
 		&__list
 			margin-left: 0
 			margin-right: 0
-			margin-bottom: -20px
+			// margin-bottom: -20px
 			flex-direction: row
 			justify-content: space-between
 		&__item
@@ -3454,7 +3463,7 @@
 			margin-right: 0
 			margin-bottom: 20px
 			&:nth-of-type(1)
-				width: 40%
+				width: 50%
 				order: 1
 			&:nth-of-type(2)
 				width: 50%
@@ -3560,3 +3569,13 @@
 	.call
 		&__wrap
 			padding-left: 30px
+
+	.ready
+		&.--bg
+			padding-bottom: 70px
+		&__form
+			max-width: 380px
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			padding: 40px
