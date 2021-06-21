@@ -732,6 +732,12 @@
 		&__bot
 			padding-bottom: 35px
 
+	.thanks
+		&__content
+			max-width: 500px
+		&__img
+			right: 0
+
 @media only screen and (max-width: 992px)
 	.case
 		max-width: 750px
@@ -1530,6 +1536,20 @@
 				display: inline
 			br
 				display: none
+
+	.thanks
+		&__content
+			max-width: 450px
+		&__img
+			width: 350px
+			right: -10px
+			bottom: -350px
+
+	.call
+		&__wrap
+			padding-left: 0
+		&__icon
+			right: -40px
 
 @media only screen and (max-width: 768px)
 	.case
@@ -3712,3 +3732,30 @@
 			margin-right: 0
 		&__policy
 			text-align: center
+
+	.thanks
+		padding-bottom: 0
+		&__content
+			max-width: 100%
+		&__img-wrap
+			max-width: 100%
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: -20px
+		&__img
+			position: relative
+			right: 0
+			bottom: 20px
+			width: 270px
+			margin-left: auto
+			margin-right: auto
+		&__person
+			display: none
+		&__call
+			.call
+				&__wrap
+					padding-left: 0
+
+	.call
+		&__icon
+			display: none
