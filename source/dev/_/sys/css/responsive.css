@@ -2341,6 +2341,22 @@
     line-height: 24px;
   }
 
+  .p-item__foot {
+    padding: 40px 25px;
+  }
+  .p-item__price {
+    margin-bottom: 40px;
+  }
+
+  .feedback__title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .feedback__text {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+
   .nowrap {
     flex-wrap: nowrap !important;
   }
@@ -2533,7 +2549,18 @@
     bottom: 0;
   }
   .oneday__round {
+    width: 290px;
+    height: 290px;
     bottom: -120px;
+  }
+  .oneday__round::before {
+    width: 270px;
+    height: 270px;
+  }
+
+  .round__text.--md {
+    font-size: 15px;
+    line-height: 23px;
   }
 
   .fix.--pb {
@@ -2702,6 +2729,8 @@
     margin-bottom: 10px;
   }
   .whatsapp__content {
+    max-width: 310px;
+    width: 100%;
     margin-right: auto;
   }
   .whatsapp__subtitle {
@@ -2710,11 +2739,15 @@
   .whatsapp__subtitle br {
     display: block;
   }
+  .whatsapp__btn {
+    display: flex;
+  }
   .whatsapp__img {
     order: 3;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    width: 216px;
   }
 
   .de {

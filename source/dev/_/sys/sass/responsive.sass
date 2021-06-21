@@ -1917,6 +1917,20 @@
 			margin-right: auto
 			line-height: 24px
 
+	.p-item
+		&__foot
+			padding: 40px 25px
+		&__price
+			margin-bottom: 40px
+
+	.feedback
+		&__title
+			font-size: 15px
+			line-height: 23px
+		&__text
+			font-size: 14px
+			letter-spacing: normal
+
 	.nowrap
 		flex-wrap: nowrap !important
 
@@ -2079,7 +2093,18 @@
 			width: 380px
 			bottom: 0
 		&__round
+			width: 290px
+			height: 290px
 			bottom: -120px
+			&::before
+				width: 270px
+				height: 270px
+
+	.round
+		&__text
+			&.--md
+				font-size: 15px
+				line-height: 23px
 
 	.fix
 		&.--pb
@@ -2217,17 +2242,21 @@
 			margin-right: auto
 			margin-bottom: 10px
 		&__content
+			max-width: 310px
+			width: 100%
 			margin-right: auto
 		&__subtitle
 			text-align: center
 			br
 				display: block
-
+		&__btn
+			display: flex
 		&__img
 			order: 3
 			margin-top: 40px
 			margin-left: auto
 			margin-right: auto
+			width: 216px
 
 	.de
 		padding-top: 55px
