@@ -4074,6 +4074,17 @@
     padding-bottom: 40px;
   }
 
+  .contacts-p {
+    padding-bottom: 40px;
+  }
+
+  .contacts.--page .contacts__wrap {
+    position: relative;
+    left: 0;
+    right: 0;
+    box-shadow: none;
+    transform: none;
+  }
   .contacts__title {
     text-align: center;
     font-size: 24px;
@@ -4127,8 +4138,36 @@
     max-width: 100%;
   }
 
+  .contact__value {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact__value p {
+    width: 50%;
+  }
+  .contact__value p:nth-of-type(1) {
+    width: 100%;
+    order: 1;
+  }
+  .contact__value p:nth-of-type(2) {
+    order: 2;
+  }
+  .contact__value p:nth-of-type(3) {
+    order: 3;
+  }
+
   .map {
     height: 360px;
+  }
+
+  .parking {
+    width: 100%;
+  }
+  .parking__text {
+    max-width: 240px;
+  }
+  .parking__text br {
+    display: none;
   }
 
   .questions.--pt {
