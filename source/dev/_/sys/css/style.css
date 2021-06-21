@@ -5860,6 +5860,9 @@ sup {
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
+.footer__nav a:hover {
+  color: #2a88d1;
+}
 .footer__policy {
   font-size: 12px;
   width: 210px;

@@ -3940,6 +3940,9 @@
   .save .case {
     padding-bottom: 410px;
   }
+  .save__content {
+    max-width: 100%;
+  }
   .save__title {
     text-align: center;
   }
@@ -4098,7 +4101,7 @@
   }
 
   .contacts-p {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .contacts.--page .contacts__wrap {
@@ -4353,11 +4356,24 @@
     bottom: 0;
   }
 
+  .team {
+    padding-bottom: 55px;
+    padding-bottom: 0;
+  }
   .team__title {
     margin-bottom: 35px;
   }
   .team__title br {
     display: none;
+  }
+  .team__slider {
+    overflow: visible;
+  }
+  .team__item {
+    width: 180px;
+  }
+  .team__swipe {
+    border-bottom: none;
   }
 
   .order {
@@ -4371,10 +4387,12 @@
   }
   .order__img-wrap {
     z-index: -1;
-    right: 15px;
-    top: 160px;
+    right: 50%;
+    top: 140px;
     order: 2;
     width: 225px;
+    margin-right: -68px;
+    transform: translateX(50%);
     position: absolute;
   }
   .order__img {
@@ -4385,20 +4403,31 @@
   }
   .order__content {
     order: 1;
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .order__title, .order__subtitle {
     text-align: center;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .order__title {
     margin-bottom: 10px;
+  }
+  .order__subtitle {
+    font-size: 15px;
+    letter-spacing: 0;
   }
   .order__inner {
     background: #fff;
     box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08);
     border-radius: 8px;
-    max-width: 350px;
+    max-width: 100%;
     width: 100%;
-    margin-top: 270px;
+    margin-top: 290px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 15px;
@@ -4459,6 +4488,13 @@
   .articles__link span {
     max-width: 200px;
     line-height: 23px;
+  }
+
+  .article__img {
+    height: 220px;
+  }
+  .article__content {
+    padding-top: 25px;
   }
 
   .t1 h1 {
@@ -4525,6 +4561,20 @@
   }
 
   .call__icon {
+    display: none;
+  }
+
+  .pagination {
+    justify-content: center;
+    align-items: center;
+  }
+  .pagination__prev {
+    margin-right: 5px;
+  }
+  .pagination__next {
+    margin-left: 5px;
+  }
+  .pagination__list {
     display: none;
   }
 }

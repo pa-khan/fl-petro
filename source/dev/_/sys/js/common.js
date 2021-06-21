@@ -83,15 +83,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
 						sliderSlider = new Swiper($slider, options);
 					}
 				} else {
-					$slider.classList.remove('swiper-container');
-					$sliderList.classList.remove('swiper-wrapper', 'nowrap');
-					$sliderList.removeAttribute('style');
-					$sliderItems.forEach(($sliderItem)=>{
-						$sliderItem.removeAttribute('style');
-						$sliderItem.classList.remove('swiper-slide');
-					});
+					if ($slider) {
+						$slider.classList.remove('swiper-container');
+						$sliderList.classList.remove('swiper-wrapper', 'nowrap');
+						$sliderList.removeAttribute('style');
+						$sliderItems.forEach(($sliderItem)=>{
+							$sliderItem.removeAttribute('style');
+							$sliderItem.classList.remove('swiper-slide');
+						});
 
-					sliderSlider = null;
+						sliderSlider = null;
+					}
 				}
 			}
 
@@ -130,7 +132,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		spaceBetween: 15
 	}, '.youtube__slider', '.youtube__list', '.youtube__item');
 
+	new MobileSlider({
+		slidesPerView: 'auto',
+		spaceBetween: 15
+	}, '.youtube__slider', '.youtube__list', '.youtube__item');
 
+	new MobileSlider({
+		slidesPerView: 'auto',
+		spaceBetween: 15
+	}, '.team__slider', '.team__list', '.team__item');
+
+	new MobileSlider({
+		slidesPerView: 1,
+		spaceBetween: 15
+	}, '.more__slider', '.more__list', '.more__item');
 
 
 	let $calc = document.querySelector('.calc');
