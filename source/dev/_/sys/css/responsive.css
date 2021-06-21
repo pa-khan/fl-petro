@@ -4373,4 +4373,32 @@
   .t1 h1 br {
     display: none;
   }
+
+  .jobs {
+    padding-bottom: 70px;
+  }
+  .jobs__item {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .jobs__form {
+    margin-top: 60px;
+  }
+
+  .j-form__title {
+    text-align: center;
+    line-height: 25px;
+  }
+  .j-form__wrap {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .j-form__item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .j-form__policy {
+    text-align: center;
+  }
 }
