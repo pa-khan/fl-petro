@@ -2341,6 +2341,22 @@
     line-height: 24px;
   }
 
+  .p-item__foot {
+    padding: 40px 25px;
+  }
+  .p-item__price {
+    margin-bottom: 40px;
+  }
+
+  .feedback__title {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .feedback__text {
+    font-size: 14px;
+    letter-spacing: normal;
+  }
+
   .nowrap {
     flex-wrap: nowrap !important;
   }
@@ -2533,7 +2549,18 @@
     bottom: 0;
   }
   .oneday__round {
+    width: 290px;
+    height: 290px;
     bottom: -120px;
+  }
+  .oneday__round::before {
+    width: 270px;
+    height: 270px;
+  }
+
+  .round__text.--md {
+    font-size: 15px;
+    line-height: 23px;
   }
 
   .fix.--pb {
@@ -2702,6 +2729,8 @@
     margin-bottom: 10px;
   }
   .whatsapp__content {
+    max-width: 310px;
+    width: 100%;
     margin-right: auto;
   }
   .whatsapp__subtitle {
@@ -2710,11 +2739,15 @@
   .whatsapp__subtitle br {
     display: block;
   }
+  .whatsapp__btn {
+    display: flex;
+  }
   .whatsapp__img {
     order: 3;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
+    width: 216px;
   }
 
   .de {
@@ -3720,6 +3753,39 @@
     margin-top: 0;
     padding-top: 65px;
   }
+  .cooperate.--page {
+    padding-bottom: 70px;
+  }
+  .cooperate.--page .cooperate__wrap {
+    padding: 25px 25px 40px 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08);
+    margin-top: 330px;
+  }
+  .cooperate.--page .cooperate__bg.bg {
+    top: 0;
+    height: 1000px;
+    z-index: -2;
+  }
+  .cooperate.--page .cooperate__img {
+    order: 1;
+    top: -300px;
+    bottom: 0;
+    margin-bottom: 0;
+    z-index: -1;
+  }
+  .cooperate.--page .cooperate__content {
+    display: none;
+  }
+  .cooperate.--page .cooperate__mobile {
+    display: block;
+    order: 2;
+    margin-bottom: 30px;
+  }
+  .cooperate.--page .cooperate__logos {
+    order: 3;
+  }
   .cooperate__wrap {
     flex-direction: column;
     background-color: transparent;
@@ -4065,6 +4131,9 @@
     height: 360px;
   }
 
+  .questions.--pt {
+    padding-top: 0;
+  }
   .questions__subtitle {
     font-size: 16px;
   }
@@ -4101,6 +4170,29 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .works__name {
+    margin-bottom: 20px;
+  }
+  .works__data {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  .works__data .data__item {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  .works__link {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .works__text {
+    display: flex;
+  }
 
   .work__content {
     padding-right: 0;
@@ -4123,15 +4215,30 @@
     left: 20px;
   }
 
+  .w-gifts {
+    max-width: 450px;
+  }
+  .w-gifts__item {
+    padding: 30px;
+  }
+  .w-gifts__name {
+    margin-bottom: 0px;
+  }
+  .w-gifts__text {
+    max-width: 260px;
+  }
+
   .arrow {
     width: 56px;
     height: 56px;
+  }
+  .arrow svg {
+    width: 12px;
   }
 
   .data__list {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: -20px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -4141,7 +4248,7 @@
     margin-bottom: 20px;
   }
   .data__item:nth-of-type(1) {
-    width: 40%;
+    width: 50%;
     order: 1;
   }
   .data__item:nth-of-type(2) {
@@ -4265,5 +4372,66 @@
 
   .call__wrap {
     padding-left: 30px;
+  }
+
+  .ready.--bg {
+    padding-bottom: 70px;
+  }
+  .ready__form {
+    max-width: 380px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+  }
+
+  .articles__item {
+    height: 200px;
+    padding: 20px;
+  }
+  .articles__link {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .articles__link span {
+    max-width: 200px;
+    line-height: 23px;
+  }
+
+  .t1 h1 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .t1 h1 br {
+    display: none;
+  }
+
+  .jobs {
+    padding-bottom: 70px;
+  }
+  .jobs__item {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .jobs__form {
+    margin-top: 60px;
+  }
+
+  .j-form__title {
+    text-align: center;
+    line-height: 25px;
+  }
+  .j-form__wrap {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .j-form__item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .j-form__policy {
+    text-align: center;
   }
 }

@@ -1917,6 +1917,20 @@
 			margin-right: auto
 			line-height: 24px
 
+	.p-item
+		&__foot
+			padding: 40px 25px
+		&__price
+			margin-bottom: 40px
+
+	.feedback
+		&__title
+			font-size: 15px
+			line-height: 23px
+		&__text
+			font-size: 14px
+			letter-spacing: normal
+
 	.nowrap
 		flex-wrap: nowrap !important
 
@@ -2079,7 +2093,18 @@
 			width: 380px
 			bottom: 0
 		&__round
+			width: 290px
+			height: 290px
 			bottom: -120px
+			&::before
+				width: 270px
+				height: 270px
+
+	.round
+		&__text
+			&.--md
+				font-size: 15px
+				line-height: 23px
 
 	.fix
 		&.--pb
@@ -2217,17 +2242,21 @@
 			margin-right: auto
 			margin-bottom: 10px
 		&__content
+			max-width: 310px
+			width: 100%
 			margin-right: auto
 		&__subtitle
 			text-align: center
 			br
 				display: block
-
+		&__btn
+			display: flex
 		&__img
 			order: 3
 			margin-top: 40px
 			margin-left: auto
 			margin-right: auto
+			width: 216px
 
 	.de
 		padding-top: 55px
@@ -3082,6 +3111,35 @@
 		background-color: #fff
 		margin-top: 0
 		padding-top: 65px
+		&.--page
+			padding-bottom: 70px
+			.cooperate
+
+				&__wrap
+					padding: 25px 25px 40px 25px
+					background-color: #fff
+					border-radius: 8px
+					box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
+					margin-top: 330px
+				&__bg
+					&.bg
+						top: 0
+						height: 1000px
+						z-index: -2
+				&__img
+					order: 1
+					top: -300px
+					bottom: 0
+					margin-bottom: 0
+					z-index: -1
+				&__content
+					display: none
+				&__mobile
+					display: block
+					order: 2
+					margin-bottom: 30px
+				&__logos
+					order: 3
 		&__wrap
 			flex-direction: column
 			background-color: transparent
@@ -3359,32 +3417,12 @@
 			margin-top: 30px
 			max-width: 100%
 
-	// .contacts
-	// 	&.--p-abs
-	// 		.contacts
-	// 			&__inner
-	// 				box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08)
-	// 			&__wrap
-	// 				position: relative
-	// 				top: 0
-	// 				left: 0
-	// 				right: 0
-	// 				transform: none
-	// 				border-radius: 0px
-	// 				box-shadow: none
-	// 	
-
-	// .parking
-	// 	width: 100%
-	// 	&__text
-	// 		max-width: 240px
-	// 		br
-	// 			display: none
-
 	.map
 		height: 360px
 
 	.questions
+		&.--pt
+			padding-top: 0
 		&__subtitle
 			font-size: 16px
 		&__person
@@ -3417,6 +3455,26 @@
 		&__name, &__foot
 			padding-left: 20px
 			padding-right: 20px
+		&__name
+			margin-bottom: 20px
+
+		&__data
+			width: 100%
+			padding-right: 0
+			margin-bottom: 30px
+			.data
+				&__item
+					width: 100% !important
+					margin-bottom: 10px
+		&__link
+			max-width: 100%
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-between
+		&__text
+			display: flex
 
 	.work
 		&__content
@@ -3438,15 +3496,26 @@
 			&.--prev
 				left: 20px
 
+	.w-gifts
+		max-width: 450px
+		&__item
+			padding: 30px
+		&__name
+			margin-bottom: 0px
+		&__text
+			max-width: 260px
+
 	.arrow
 		width: 56px
 		height: 56px
+		svg
+			width: 12px
 
 	.data
 		&__list
 			margin-left: 0
 			margin-right: 0
-			margin-bottom: -20px
+			// margin-bottom: -20px
 			flex-direction: row
 			justify-content: space-between
 		&__item
@@ -3454,7 +3523,7 @@
 			margin-right: 0
 			margin-bottom: 20px
 			&:nth-of-type(1)
-				width: 40%
+				width: 50%
 				order: 1
 			&:nth-of-type(2)
 				width: 50%
@@ -3560,3 +3629,54 @@
 	.call
 		&__wrap
 			padding-left: 30px
+
+	.ready
+		&.--bg
+			padding-bottom: 70px
+		&__form
+			max-width: 380px
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			padding: 40px
+
+	.articles
+		&__item
+			height: 200px
+			padding: 20px
+		&__link
+			max-width: 100%
+			display: flex
+			justify-content: space-between
+			span
+				max-width: 200px
+				line-height: 23px
+
+	.t1
+		h1
+			font-size: 24px
+			line-height: 35px
+			br
+				display: none
+
+	.jobs
+		padding-bottom: 70px
+		&__item
+			padding-left: 30px
+			padding-right: 30px
+		&__form
+			margin-top: 60px
+
+	.j-form
+		&__title
+			text-align: center
+			line-height: 25px
+		&__wrap
+			margin-left: 0
+			margin-right: 0
+		&__item
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+		&__policy
+			text-align: center
