@@ -4315,6 +4315,44 @@ sup {
   height: 128px;
   background: url("../imgs/lines-7.svg") no-repeat center;
 }
+.cooperate__mobile {
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: none;
+}
+.cooperate__mobile-title {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+.cooperate__mobile-text p {
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.cooperate__mobile-text p:last-of-type {
+  margin-bottom: 0;
+}
+.cooperate__mobile-form {
+  margin-top: 26px;
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cooperate__mobile-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cooperate__mobile-btn.--sm {
+  padding: 5px 41px;
+}
+.cooperate__mobile-policy {
+  opacity: 0.5;
+  font-size: 11px;
+  line-height: 19px;
+}
+.cooperate__mobile-policy br {
+  display: none;
+}
 
 .instructions {
   position: relative;

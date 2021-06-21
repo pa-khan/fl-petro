@@ -3720,6 +3720,39 @@
     margin-top: 0;
     padding-top: 65px;
   }
+  .cooperate.--page {
+    padding-bottom: 70px;
+  }
+  .cooperate.--page .cooperate__wrap {
+    padding: 25px 25px 40px 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 60px rgba(0, 0, 0, 0.08);
+    margin-top: 330px;
+  }
+  .cooperate.--page .cooperate__bg.bg {
+    top: 0;
+    height: 1000px;
+    z-index: -2;
+  }
+  .cooperate.--page .cooperate__img {
+    order: 1;
+    top: -300px;
+    bottom: 0;
+    margin-bottom: 0;
+    z-index: -1;
+  }
+  .cooperate.--page .cooperate__content {
+    display: none;
+  }
+  .cooperate.--page .cooperate__mobile {
+    display: block;
+    order: 2;
+    margin-bottom: 30px;
+  }
+  .cooperate.--page .cooperate__logos {
+    order: 3;
+  }
   .cooperate__wrap {
     flex-direction: column;
     background-color: transparent;
