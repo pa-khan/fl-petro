@@ -2,71 +2,78 @@
 	.case
 		.objects__title.h1 Оштукатурили #[br]больше #[strong 500 объектов]
 		.objects__subtitle.h2 домов, квартир и коммерческих помещений
-		.objects__list
-			mixin object
-				.objects__item.object
-					.object__content
-						.object__name Механизированная штукатурка стен, откосов в загородном доме 800 м#[sup 2]
-						.object__data.data
-							.data__list.row
-								.data__item
-									.data__icon
-											img(src="_/uploads/tape-green.svg" alt="")
-									.data__text
-										.data__title Площадь по полу: 
-										.data__value 1000 м#[sup 2]
-								.data__item
-									.data__icon
-											img(src="_/uploads/tape-green.svg" alt="")
-									.data__text
-										.data__title Площадь по стенам: 
-										.data__value 4000 м#[sup 2]
-								.data__item
-									.data__icon
-											img(src="_/uploads/clock-green.svg" alt="")
-									.data__text
-										.data__title СРОК: 
-										.data__value 4 дня
-								.data__item.--full
-									.data__icon
-										img(src="_/uploads/info-green.svg" alt="") 
-									.data__text
-										.data__title Описание:
-										.data__value Выполнили работу в жилой квартире площадью 80 кв. м #[br]за 1 день. Заказчик остался доволен проделанной работой. #[br]Дополнительно залили полусухую стяжку.
-						.object__btns.row
-							a.object__btn.btn.--md.--bg-blue(href="javascript:;" data-fancybox="" data-src="#modal-calc") У МЕНЯ ПОХОЖАЯ ЗАДАЧА
-							a.object__more(href="object.html")
-								img(src="_/uploads/info-gray.svg" alt="")
-								span Узнать подробнее
-					.object__imgs.imgs
-						.imgs__list
-							.imgs__list-wrap.swiper-container
-								.imgs__list-list.swiper-wrapper
-									.imgs__list-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-									.imgs__list-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-									.imgs__list-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-									.imgs__list-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
+		.objects__slider
+			.objects__list
+				mixin object
+					.objects__item.object
+						.object__content
+							.object__name Механизированная штукатурка стен, откосов в загородном доме 800 м#[sup 2]
+							.object__data.data
+								.data__list.row
+									.data__item
+										.data__icon
+												img(src="_/uploads/tape-green.svg" alt="")
+										.data__text
+											.data__title Площадь по полу: 
+											.data__value 1000 м#[sup 2]
+									.data__item
+										.data__icon
+												img(src="_/uploads/tape-green.svg" alt="")
+										.data__text
+											.data__title Площадь по стенам: 
+											.data__value 4000 м#[sup 2]
+									.data__item
+										.data__icon
+												img(src="_/uploads/clock-green.svg" alt="")
+										.data__text
+											.data__title СРОК: 
+											.data__value 4 дня
+									.data__item.--full.--text
+										.data__icon
+											img(src="_/uploads/info-green.svg" alt="") 
+										.data__text
+											.data__title Описание:
+											.data__value Выполнили работу в жилой квартире площадью 80 кв. м #[br]за 1 день. Заказчик остался доволен проделанной работой. #[br]Дополнительно залили полусухую стяжку.
+							.object__btns.row
+								a.object__btn.btn.--md.--bg-blue(href="javascript:;" data-fancybox="" data-src="#modal-calc") У МЕНЯ ПОХОЖАЯ ЗАДАЧА
+								a.object__more(href="object.html")
+									img(src="_/uploads/info-gray.svg" alt="")
+									span Узнать подробнее
+						.object__imgs.imgs
+							.imgs__list
+								.imgs__list-wrap.swiper-container
+									.imgs__list-list.swiper-wrapper
+										.imgs__list-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+										.imgs__list-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+										.imgs__list-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+										.imgs__list-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+							.imgs__arrows
+								.imgs__arrow.btn.arrow.--bg-white.--round.--prev
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></svg>
+								.imgs__arrow.btn.arrow.--bg-white.--round.--next
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744 L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284 c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"/></svg>
 
-						.imgs__thumbs
-							.imgs__thumbs-wrap.swiper-container
-								.imgs__thumbs-list.swiper-wrapper
-									.imgs__thumbs-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-									.imgs__thumbs-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-									.imgs__thumbs-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-									.imgs__thumbs-item.swiper-slide
-										img(src="_/uploads/object-1.png" alt="")
-			+object
-			+object
-			+object
-			+object
+							.imgs__thumbs
+								.imgs__thumbs-wrap.swiper-container
+									.imgs__thumbs-list.swiper-wrapper
+										.imgs__thumbs-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+										.imgs__thumbs-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+										.imgs__thumbs-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+										.imgs__thumbs-item.swiper-slide
+											img(src="_/uploads/object-1.png" alt="")
+				+object
+				+object
+				+object
+				+object
 
+		+swipe('objects', 'Чтобы посмотреть другие работы, <br>проведите в сторону')
 		.objects__more.btn-more
 			.btn-more__wrap.btn
 				.btn-more__icon

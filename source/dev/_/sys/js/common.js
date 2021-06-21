@@ -7,6 +7,18 @@ let mailPattern = /^[0-9a-z_-]+@[0-9a-z_-]+.[a-z]{2,5}$/i;
 
 
 document.addEventListener('DOMContentLoaded', ()=>{
+	let $navToggle = document.querySelector('.ntoggle'),
+			$header    = document.querySelector('.header');
+
+	$navToggle.addEventListener('click', ()=>{
+		$navToggle.classList.toggle('--toggle');
+		$header.classList.toggle('--toggle');
+
+		$html.classList.toggle('overflow-disable');
+		$body.classList.toggle('overflow-disable');
+		$wrap.classList.toggle('overflow-disable');
+	});
+
 	let $inputs = document.querySelectorAll('.input');
 
 	if ($inputs) {
@@ -49,6 +61,66 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			})
 		});
 	}
+
+
+
+	function MobileSlider(options, $el, $list, $items) {
+		$slider = document.querySelector($el);
+		if ($slider) {
+			let sliderSlider,
+					$sliderList  = document.querySelector($list),
+					$sliderItems = document.querySelectorAll($items);
+
+			function initSlider(){
+				if ($wrap.offsetWidth <= 768) {
+					if (!sliderSlider) {
+						$slider.classList.add('swiper-container');
+						$sliderList.classList.add('swiper-wrapper', 'nowrap');
+						$sliderItems.forEach(($sliderItem)=>{
+							$sliderItem.classList.add('swiper-slide');
+						});
+
+						sliderSlider = new Swiper($slider, options);
+					}
+				} else {
+					$slider.classList.remove('swiper-container');
+					$sliderList.classList.remove('swiper-wrapper', 'nowrap');
+					$sliderList.removeAttribute('style');
+					$sliderItems.forEach(($sliderItem)=>{
+						$sliderItem.removeAttribute('style');
+						$sliderItem.classList.remove('swiper-slide');
+					});
+
+					sliderSlider = null;
+				}
+			}
+
+			initSlider();
+
+			window.addEventListener('resize', ()=>{
+				initSlider();
+			});
+		}
+
+	}
+
+	new MobileSlider({
+		slidesPerView: 1,
+		autoHeight: true
+	}, '.price__slider', '.price__list', '.price__item');
+
+	new MobileSlider({
+		slidesPerView: 'auto',
+		autoHeight: true
+	}, '.allinc__slider', '.allinc__list', '.allinc__item');
+
+	new MobileSlider({
+		slidesPerView: 1,
+		autoHeight: true,
+		spaceBetween: 15
+	}, '.objects__slider', '.objects__list', '.objects__item');
+
+
 
 
 	let $calc = document.querySelector('.calc');
@@ -153,6 +225,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 			});
 
 			imgsList = new Swiper($imgsList, {
+				navigation: {
+					nextEl: $object.querySelector('.imgs__arrow.--next'),
+					prevEl: $object.querySelector('.imgs__arrow.--prev')
+				},
 				thumbs: {
 					swiper: imgsThumbs
 				}

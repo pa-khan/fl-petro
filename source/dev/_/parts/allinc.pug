@@ -1,31 +1,35 @@
+include ../sys/pug/vars
+
 .allinc
 	.case
 		.allinc__subtitle.h2 Вам не нужно будет ни за что доплачивать
 		.allinc__title.h1 В МАКСИМАЛЬНОм ТАРИФЕ #[br]#[strong ВКЛЮЧЕНЫ ВСЕ работы] #[br]«под ключ»
-		.allinc__list.row
-			.allinc__item
-				.allinc__name Грунтовка стен
-				.allinc__value 01
-			.allinc__item
-				.allinc__name Монтаж сетки
-				.allinc__value 02
-			.allinc__item
-				.allinc__name Установка уголков
-				.allinc__value 03
-			.allinc__item
-				.allinc__name Уборка мусора
-				.allinc__value 04
-			.allinc__item
-				.allinc__name Установка и демонтаж #[br]маяков
-				.allinc__value 05
-			.allinc__item
-				.allinc__name Доставка материалов #[br]и оборудования
-				.allinc__value 06
-			.allinc__item
-				.allinc__name Заглаживание, #[br]глянцевание
-				.allinc__value 07
-			.allinc__item
-				.allinc__name Нанесение #[br]штукатурки
-				.allinc__value 08
+		.allinc__slider
+			.allinc__list.row
+				.allinc__item
+					.allinc__name Грунтовка стен
+					.allinc__value 01
+				.allinc__item
+					.allinc__name Монтаж сетки
+					.allinc__value 02
+				.allinc__item
+					.allinc__name Установка уголков
+					.allinc__value 03
+				.allinc__item
+					.allinc__name Уборка мусора
+					.allinc__value 04
+				.allinc__item
+					.allinc__name Установка и демонтаж #[br]маяков
+					.allinc__value 05
+				.allinc__item
+					.allinc__name Доставка материалов #[br]и оборудования
+					.allinc__value 06
+				.allinc__item
+					.allinc__name Заглаживание, #[br]глянцевание
+					.allinc__value 07
+				.allinc__item
+					.allinc__name Нанесение #[br]штукатурки
+					.allinc__value 08
+		+swipe('allinc', 'Чтобы посмотреть другие работы, <br>проведите в сторону')
 		.allinc__img
 			img(src="_/uploads/worker.png" alt="")

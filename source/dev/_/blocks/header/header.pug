@@ -1,5 +1,23 @@
 include ../../sys/pug/vars
 
+.mob-nav
+	.mob-nav__fixed.m-nav-f
+		.case
+			.m-nav-f__wrap.row
+				a.m-nav-f__logo(href="index.html")
+					img(src="_/uploads/logo.png" alt="")
+				.m-nav-f__toggle.ntoggle
+					.ntoggle__lines #[div]#[div]#[div]#[div]
+					.ntoggle__title МЕНЮ
+
+	.mob-nav__static.m-nav-s
+		.case
+			.m-nav-s__wrap.row
+				.m-nav-s__contacts
+					.m-nav-s__phone.phone #[a(href="tel:+74951197437") +7 (495) 119-74-37]
+					.m-nav-s__time.time Ежедневно 07:00–22:00
+				a.m-nav-s__call.i-phone(href="tel:+74951197437")
+
 header.header
 	.case
 		.header__wrap
@@ -48,4 +66,5 @@ header.header
 				.header__contacts
 					.header__phone.phone #[a(href="tel:+74951197437") +7 (495) 119-74-37]
 					.header__time.time Ежедневно 07:00–22:00
+					.header__i-phone.i-phone(href="tel:+74951197437")
 				a.header__btn.btn.--sm.--bg-white(href="javascript:;" data-fancybox="" data-src="#modal-callback") Заказать звонок

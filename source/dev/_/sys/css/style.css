@@ -825,6 +825,14 @@ sup {
   overflow: hidden;
 }
 
+.hidden-br {
+  display: none;
+}
+
+.swipe {
+  display: none;
+}
+
 .bg-wrap {
   z-index: 1;
   position: relative;
@@ -841,6 +849,10 @@ sup {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.mob-nav {
+  display: none;
 }
 
 .header {
@@ -898,6 +910,9 @@ sup {
   text-align: right;
   margin-left: auto;
   margin-right: 25px;
+}
+.header__i-phone {
+  display: none;
 }
 
 .panel {
@@ -2404,6 +2419,7 @@ sup {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .quality {
@@ -2730,6 +2746,9 @@ sup {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.imgs__arrows {
+  display: none;
 }
 .imgs__thumbs {
   position: absolute;
