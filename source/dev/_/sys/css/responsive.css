@@ -4065,6 +4065,9 @@
     height: 360px;
   }
 
+  .questions.--pt {
+    padding-top: 0;
+  }
   .questions__subtitle {
     font-size: 16px;
   }
@@ -4314,5 +4317,27 @@
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
+  }
+
+  .articles__item {
+    height: 200px;
+    padding: 20px;
+  }
+  .articles__link {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .articles__link span {
+    max-width: 200px;
+    line-height: 23px;
+  }
+
+  .t1 h1 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .t1 h1 br {
+    display: none;
   }
 }
